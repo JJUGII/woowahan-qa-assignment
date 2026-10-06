@@ -17,4 +17,4 @@ done only means you think the destination is visible; the program verifies the u
 Element IDs expire after each action. The supplied history contains only completed device actions.
 ```
 
-사용자 목표, 추가 지시, 완료 동작 설명과 최대 80개 화면 요소를 함께 제공합니다. 이 파일은 코드 생성 지시가 아니라 다음 한 동작의 JSON 제안을 위한 프롬프트입니다.
+사용자 목표, 추가 지시, 완료 동작 설명과 최대 80개 화면 요소를 함께 제공합니다. AI는 이 프롬프트에 따라 다음 한 동작을 JSON으로 제안합니다.

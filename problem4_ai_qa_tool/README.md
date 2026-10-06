@@ -1,8 +1,8 @@
 # 문제 4 - Android Script Studio
 
-**기존에 테스트 자동화를 구축하면서 가장 많은 시간이 들었던 작업은 테스트 스크립트 작성이었습니다. 화면 요소를 찾고 같은 동작과 검증 코드를 반복해서 작성하는 시간을 줄이고자 Universal 프로젝트를 만들기 시작했습니다. 이번 과제를 받고 기존 기능에 AI 지원을 추가한 Android Script Studio를 제출합니다.**
+**테스트 자동화를 구축하면서 스크립트 작성에 가장 많은 시간이 들었습니다. 화면 요소를 찾고 같은 동작과 검증 코드를 반복해서 작성하는 작업을 줄이기 위해 Universal 프로젝트를 시작했습니다. 이번 과제에서는 기존 기능에 AI 지원을 추가한 Android Script Studio를 제출합니다.**
 
-**휴대폰 화면에서 수행한 동작을 기록해 Python 또는 Kotlin 테스트 코드로 저장하는 도구입니다. 추가한 AI 기능은 테스트 목표와 현재 화면을 보고 다음 동작을 제안합니다. 실행한 동작을 기록하고, 기록을 바탕으로 테스트 코드를 생성합니다.**
+**휴대폰에서 수행한 동작을 기록하고 Python 또는 Kotlin 테스트 코드로 저장하는 도구입니다. AI는 테스트 목표와 현재 화면을 보고 다음 동작을 제안합니다. 프로그램이 실행 대상을 확인한 뒤 동작을 수행하고, 완료한 기록으로 코드를 생성합니다.**
 
 프로토타입 소스 코드와 프롬프트, [Windows EXE 풀 패키지](https://github.com/JJUGII/woowahan-qa-assignment/releases/download/submission/AndroidScriptStudio-Windows-x64.zip)를 함께 제출합니다. 실행 및 설정 방법은 아래에 정리했습니다.
 
@@ -15,7 +15,7 @@
 
 `목표/도착 문구 입력 → 화면 확인 → AI 제안 → 대상 확인 및 실행 → 결과 기록 → 코드 저장`
 
-AI는 정해진 형식의 다음 동작을 제안하며 임의 코드를 실행하지 않습니다. 프로그램이 응답 형식, 대상 중복, 화면 변경과 실제 도착 문구를 확인하고 템플릿으로 코드를 생성합니다.
+AI는 현재 화면을 보고 다음 동작을 JSON으로 제안합니다. 프로그램은 응답 형식과 실행 대상을 확인한 후 동작을 수행합니다. 대상이 중복되거나 화면이 바뀌면 실행을 중단합니다. 도착 문구가 실제로 보이는지 확인해 표시 검증을 기록하고, 완료한 기록으로 테스트 코드를 생성합니다.
 
 압축 제출본에는 `release/AndroidScriptStudio-Windows-x64.zip`도 포함되어 있습니다.
 
@@ -49,7 +49,6 @@ AI는 정해진 형식의 다음 동작을 제안하며 임의 코드를 실행�
 - [prompts/prompt.md](prompts/prompt.md): 실제 AI 프롬프트 사본
 - [examples/](examples/): 단말/AI 호출 없이 볼 수 있는 가상 입력과 생성 코드 예제
 
-기존 Universal 프로젝트에 AI 지원 기능을 추가했습니다.
 
 ## 단말과 API 키 없이 예제 확인
 
@@ -71,5 +70,5 @@ python -m venv .venv
 
 ## 사용 도구와 AI 활용
 
-Python, Tkinter/CustomTkinter, Appium, ADB, UIAutomator와 PyInstaller를 사용했습니다. 기존 개인 Recorder를 바탕으로 Codex를 AI 기능, 테스트, 패키징과 문서 작성에 활용했습니다. 프로그램 안의 LLM은 다음 동작 제안을 담당하고, 기대 결과와 생성 코드 검토는 사용자가 수행합니다.
+Python, Tkinter/CustomTkinter, Appium, ADB, UIAutomator와 PyInstaller를 사용했습니다. 기존 Universal 프로젝트를 바탕으로 AI 기능, 테스트 코드, 패키징과 문서 작성에 Codex를 사용했습니다. 프로그램 안의 LLM은 다음 동작 제안을 담당하고, 기대 결과와 생성 코드 검토는 사용자가 수행합니다.
 
