@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "goal": "설정 화면의 제목을 확인한다.",
+  "arrival_exact_text": "설정",
+  "initial_state": "가상 XML 기반 예시. 실제 앱 실행/AI 응답 결과가 아님.",
+  "steps": [
+    {
+      "kind": "selector",
+      "step": {
+        "mode": "ASSERT",
+        "strategy": "ID",
+        "value": "com.example.qa:id/settings_title",
+        "description": "설정 표시 확인",
+        "assertion": "visible",
+        "expected_value": true,
+        "provider": "가상 입력 예시"
+      },
+      "description": "설정 제목 표시 검증"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.6, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\gyju\Documents\Codex\2026-10-06\files-pasted-by-the-user-windows\work\problem2-venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\gyju\Documents\Codex\2026-10-06\files-pasted-by-the-user-windows\outputs\problem2
+configfile: pytest.ini
+testpaths: .
+collecting ... collected 25 items
+
+test_stock_api.py::test_get_stock PASSED
+test_stock_api.py::test_repeated_reads_do_not_change_stock PASSED
+test_stock_api.py::test_order_decreases_stock PASSED
+test_stock_api.py::test_order_multiple_units PASSED
+test_stock_api.py::test_order_all_stock_marks_sold_out PASSED
+test_stock_api.py::test_sold_out_order_fails_without_mutation PASSED
+test_stock_api.py::test_excess_quantity_has_no_partial_deduction PASSED
+test_stock_api.py::test_cancel_restores_exact_quantity PASSED
+test_stock_api.py::test_cancel_sold_out_product_clears_sold_out PASSED
+test_stock_api.py::test_other_customer_can_buy_immediately_after_cancel PASSED
+test_stock_api.py::test_repeated_cancel_does_not_restore_twice PASSED
+test_stock_api.py::test_unknown_product_query PASSED
+test_stock_api.py::test_unknown_product_order PASSED
+test_stock_api.py::test_invalid_quantity_does_not_change_stock[zero] PASSED
+test_stock_api.py::test_invalid_quantity_does_not_change_stock[negative] PASSED
+test_stock_api.py::test_invalid_quantity_does_not_change_stock[fraction] PASSED
+test_stock_api.py::test_invalid_quantity_does_not_change_stock[string] PASSED
+test_stock_api.py::test_invalid_quantity_does_not_change_stock[boolean] PASSED
+test_stock_api.py::test_invalid_quantity_does_not_change_stock[null] PASSED
+test_stock_api.py::test_unknown_order_cancel_does_not_change_stock PASSED
+test_stock_api.py::test_stock_matches_order_and_cancel_ledger PASSED
+test_stock_api.py::test_concurrent_last_stock[20ms] CONCURRENCY_EVIDENCE {"requested_gap_ms": 20, "server_arrival_gap_ms": 46.313, "A": 201, "B": 409, "final_stock": 0, "committed_orders": 1}
+PASSED
+test_stock_api.py::test_concurrent_last_stock[30ms] CONCURRENCY_EVIDENCE {"requested_gap_ms": 30, "server_arrival_gap_ms": 62.189, "A": 201, "B": 409, "final_stock": 0, "committed_orders": 1}
+PASSED
+test_stock_api.py::test_concurrent_last_stock[40ms] CONCURRENCY_EVIDENCE {"requested_gap_ms": 40, "server_arrival_gap_ms": 61.578, "A": 201, "B": 409, "final_stock": 0, "committed_orders": 1}
+PASSED
+test_stock_api.py::test_parallel_cancel_restores_stock_only_once PASSED
+
+- generated xml file: C:\Users\gyju\Documents\Codex\2026-10-06\files-pasted-by-the-user-windows\outputs\problem2\reports\junit.xml -
+============================= 25 passed in 3.58s ==============================

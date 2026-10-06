@@ -1,0 +1,641 @@
+{
+  "title": "문제 2",
+  "created": "2026-10-06T20:20:21+09:00",
+  "scope": "로컬 HTTP 스텁 검증. 실제 B마트 서버가 아닙니다.",
+  "environment": {
+    "Python": "3.14.6",
+    "OS": "Windows-11-10.0.26200-SP0"
+  },
+  "exit_code": 0,
+  "overall": "PASS",
+  "counts": {
+    "PASS": 25
+  },
+  "cases": [
+    {
+      "id": "TC-STK-001",
+      "title": "정상 재고 조회",
+      "status": "PASS",
+      "duration": 0.08071080000081565,
+      "precondition": "P001 재고 5",
+      "procedure": "P001 재고를 GET 조회한다.",
+      "expected": "200, stock=5, soldOut=false, orderable=true",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_get_stock"
+    },
+    {
+      "id": "TC-STK-002",
+      "title": "반복 조회 시 재고 유지",
+      "status": "PASS",
+      "duration": 0.15693410000312724,
+      "precondition": "P001 재고 5",
+      "procedure": "동일 상품의 재고를 3회 조회한다.",
+      "expected": "매 조회 stock=5. 조회만으로 수량이 바뀌지 않음",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_repeated_reads_do_not_change_stock"
+    },
+    {
+      "id": "TC-ORD-001",
+      "title": "1개 주문 후 재고 차감",
+      "status": "PASS",
+      "duration": 0.1407619000019622,
+      "precondition": "P001=5, P002=8",
+      "procedure": "A가 P001 1개 주문 후 두 상품 재고를 조회한다.",
+      "expected": "201 PAID, P001=4, P002=8 유지",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_order_decreases_stock"
+    },
+    {
+      "id": "TC-ORD-002",
+      "title": "복수 수량 주문의 정확한 차감",
+      "status": "PASS",
+      "duration": 0.1234139000007417,
+      "precondition": "P001 재고 5",
+      "procedure": "A가 P001 3개 주문 후 재고를 조회한다.",
+      "expected": "201, quantity=3, 최종 재고=2",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_order_multiple_units"
+    },
+    {
+      "id": "TC-ORD-003",
+      "title": "전량 주문 후 품절 전환",
+      "status": "PASS",
+      "duration": 0.12142099999982747,
+      "precondition": "P001 재고 5",
+      "procedure": "5개 주문한다. 별도 클라이언트로 즉시 재고를 조회한다.",
+      "expected": "201, 재고=0, soldOut=true, orderable=false",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_order_all_stock_marks_sold_out"
+    },
+    {
+      "id": "TC-ORD-004",
+      "title": "품절 상품 주문 거부",
+      "status": "PASS",
+      "duration": 0.15110880000065663,
+      "precondition": "P001=0, P002=8",
+      "procedure": "P001 1개 주문 후 재고 및 주문 원장을 확인한다.",
+      "expected": "409 OUT_OF_STOCK, P001=0, P002=8, 생성 주문=0",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_sold_out_order_fails_without_mutation"
+    },
+    {
+      "id": "TC-ORD-005",
+      "title": "재고 초과 주문의 부분 차감 방지",
+      "status": "PASS",
+      "duration": 0.16362170000138576,
+      "precondition": "P001 재고 5",
+      "procedure": "6개 주문 실패 후 재고를 조회한다. 이후 5개 주문한다.",
+      "expected": "실패 후 재고=5·주문=0. 이후 주문=201, 최종 재고=0",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_excess_quantity_has_no_partial_deduction"
+    },
+    {
+      "id": "TC-CAN-001",
+      "title": "취소 시 차감 수량 정확히 복구",
+      "status": "PASS",
+      "duration": 0.1726442999970459,
+      "precondition": "P001 재고 5",
+      "procedure": "3개 주문하고 재고=2를 확인한다. 해당 주문을 취소한다.",
+      "expected": "200 CANCELLED, restoredQuantity=3, 최종 재고=5",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_cancel_restores_exact_quantity"
+    },
+    {
+      "id": "TC-CAN-002",
+      "title": "취소 복구 후 품절 해제",
+      "status": "PASS",
+      "duration": 0.16376640000089537,
+      "precondition": "P001 재고 5",
+      "procedure": "5개 주문 후 품절을 확인한다. 취소 후 별도 고객이 즉시 조회한다.",
+      "expected": "재고=5, soldOut=false, orderable=true",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_cancel_sold_out_product_clears_sold_out"
+    },
+    {
+      "id": "TC-CAN-003",
+      "title": "취소 직후 다른 고객 재주문",
+      "status": "PASS",
+      "duration": 0.17069070000070496,
+      "precondition": "P001 재고 1",
+      "procedure": "A가 1개 주문 후 취소한다. B가 즉시 1개 주문한다.",
+      "expected": "A 취소=200, B 주문=201, 최종 재고=0, 서로 다른 주문 ID",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_other_customer_can_buy_immediately_after_cancel"
+    },
+    {
+      "id": "TC-CAN-004",
+      "title": "반복 취소의 중복 복구 방지",
+      "status": "PASS",
+      "duration": 0.18737189999956172,
+      "precondition": "P001 재고 5",
+      "procedure": "2개 주문 후 같은 주문을 두 번 취소한다.",
+      "expected": "모두 200. 복구 수량은 2와 0, 최종 재고=5",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_repeated_cancel_does_not_restore_twice"
+    },
+    {
+      "id": "TC-ERR-001",
+      "title": "없는 상품 재고 조회",
+      "status": "PASS",
+      "duration": 0.15663340000173775,
+      "precondition": "P001=5, P002=8",
+      "procedure": "MISSING 상품을 조회한 뒤 기존 상품 재고를 확인한다.",
+      "expected": "404 PRODUCT_NOT_FOUND, 기존 두 상품 재고 유지",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_unknown_product_query"
+    },
+    {
+      "id": "TC-ERR-002",
+      "title": "없는 상품 주문",
+      "status": "PASS",
+      "duration": 0.13689059999524034,
+      "precondition": "P001=5, P002=8",
+      "procedure": "MISSING 상품 1개 주문 후 재고와 주문 원장을 확인한다.",
+      "expected": "404 PRODUCT_NOT_FOUND, 기존 재고 유지, 생성 주문=0",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_unknown_product_order"
+    },
+    {
+      "id": "TC-ERR-003[zero]",
+      "title": "잘못된 수량 거부",
+      "status": "PASS",
+      "duration": 0.12351139999736915,
+      "precondition": "각 실행마다 P001 재고 5",
+      "procedure": "수량 0, -1, 1.5, 문자열 1, true, null로 각각 주문한다.",
+      "expected": "각 400 INVALID_QUANTITY, 재고=5, 생성 주문=0",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_invalid_quantity_does_not_change_stock[zero]"
+    },
+    {
+      "id": "TC-ERR-003[negative]",
+      "title": "잘못된 수량 거부",
+      "status": "PASS",
+      "duration": 0.12412219999896479,
+      "precondition": "각 실행마다 P001 재고 5",
+      "procedure": "수량 0, -1, 1.5, 문자열 1, true, null로 각각 주문한다.",
+      "expected": "각 400 INVALID_QUANTITY, 재고=5, 생성 주문=0",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_invalid_quantity_does_not_change_stock[negative]"
+    },
+    {
+      "id": "TC-ERR-003[fraction]",
+      "title": "잘못된 수량 거부",
+      "status": "PASS",
+      "duration": 0.12514180000289343,
+      "precondition": "각 실행마다 P001 재고 5",
+      "procedure": "수량 0, -1, 1.5, 문자열 1, true, null로 각각 주문한다.",
+      "expected": "각 400 INVALID_QUANTITY, 재고=5, 생성 주문=0",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_invalid_quantity_does_not_change_stock[fraction]"
+    },
+    {
+      "id": "TC-ERR-003[string]",
+      "title": "잘못된 수량 거부",
+      "status": "PASS",
+      "duration": 0.1071726999944076,
+      "precondition": "각 실행마다 P001 재고 5",
+      "procedure": "수량 0, -1, 1.5, 문자열 1, true, null로 각각 주문한다.",
+      "expected": "각 400 INVALID_QUANTITY, 재고=5, 생성 주문=0",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_invalid_quantity_does_not_change_stock[string]"
+    },
+    {
+      "id": "TC-ERR-003[boolean]",
+      "title": "잘못된 수량 거부",
+      "status": "PASS",
+      "duration": 0.12560259999736445,
+      "precondition": "각 실행마다 P001 재고 5",
+      "procedure": "수량 0, -1, 1.5, 문자열 1, true, null로 각각 주문한다.",
+      "expected": "각 400 INVALID_QUANTITY, 재고=5, 생성 주문=0",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_invalid_quantity_does_not_change_stock[boolean]"
+    },
+    {
+      "id": "TC-ERR-003[null]",
+      "title": "잘못된 수량 거부",
+      "status": "PASS",
+      "duration": 0.10817110000061803,
+      "precondition": "각 실행마다 P001 재고 5",
+      "procedure": "수량 0, -1, 1.5, 문자열 1, true, null로 각각 주문한다.",
+      "expected": "각 400 INVALID_QUANTITY, 재고=5, 생성 주문=0",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_invalid_quantity_does_not_change_stock[null]"
+    },
+    {
+      "id": "TC-ERR-004",
+      "title": "없는 주문 취소",
+      "status": "PASS",
+      "duration": 0.15685379999922588,
+      "precondition": "P001=5, P002=8",
+      "procedure": "MISSING 주문을 취소하고 두 상품 재고를 조회한다.",
+      "expected": "404 ORDER_NOT_FOUND, 기존 재고 유지",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_unknown_order_cancel_does_not_change_stock"
+    },
+    {
+      "id": "TC-INT-001",
+      "title": "복수 주문·취소 후 재고 정합성",
+      "status": "PASS",
+      "duration": 0.3291819999976724,
+      "precondition": "P001=10, P002=8",
+      "procedure": "P001을 2·3·1개 주문 후 3개 주문 취소. 8개 주문 실패. P002 2개 주문.",
+      "expected": "P001=10-(2+3+1)+3=7, P002=6, 총 주문 원장=4건",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_stock_matches_order_and_cancel_ledger"
+    },
+    {
+      "id": "TC-CON-001[run001-B-first-49ms]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.2046145999993314,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "1회차: 무작위로 B 먼저, 49ms 간격 선택. 두 요청 중첩 후 서버 접수 순서대로 결과 검증. seed=1269109452",
+      "expected": "서버 선접수 고객=201, 나머지=409 OUT_OF_STOCK. 재고=0, 저장 주문=1. 처리 중첩 및 설정 간격≤실측 서버 접수 간격<100ms.",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrandom_order_evidence: {\"seed\": 1269109452, \"repeat_index\": 1, \"first_sender\": \"B\", \"gap_ms\": 49, \"started_at\": \"2026-10-06T20:20:20.839093+09:00\", \"events\": {\"B\": {\"call_started_at\": \"2026-10-06T20:20:20.870847+09:00\", \"call_started_ns\": 21689045419800, \"response_at\": \"2026-10-06T20:20:20.980024+09:00\", \"http_status\": 201, \"error_code\": null, \"outcome\": \"SUCCESS\"}, \"A\": {\"call_started_at\": \"2026-10-06T20:20:20.950052+09:00\", \"call_started_ns\": 21689124669800, \"response_at\": \"2026-10-06T20:20:20.979847+09:00\", \"http_status\": 409, \"error_code\": \"OUT_OF_STOCK\", \"outcome\": \"SOLD_OUT\"}}, \"overlap\": true, \"gap_reference\": \"first_server_admission\", \"inventory_checks_passed\": true, \"timing_checks_passed\": true, \"server_order\": [\"B\", \"A\"], \"server_admissions\": [{\"ticket\": 0, \"customer\": \"B\", \"monotonic_ns\": 21689075186900}, {\"ticket\": 1, \"customer\": \"A\", \"monotonic_ns\": 21689153474000}], \"actual_send_order\": [\"B\", \"A\"], \"send_gap_ms\": 79.25, \"server_arrival_gap_ms\": 78.287, \"successful_customers\": [\"B\"], \"sold_out_customers\": [\"A\"]}\nrandom_seed: 1269109452",
+      "source": "test_stock_api.py::test_concurrent_last_stock[run001-B-first-49ms]",
+      "random_event": {
+        "seed": 1269109452,
+        "repeat_index": 1,
+        "first_sender": "B",
+        "gap_ms": 49,
+        "started_at": "2026-10-06T20:20:20.839093+09:00",
+        "events": {
+          "B": {
+            "call_started_at": "2026-10-06T20:20:20.870847+09:00",
+            "call_started_ns": 21689045419800,
+            "response_at": "2026-10-06T20:20:20.980024+09:00",
+            "http_status": 201,
+            "error_code": null,
+            "outcome": "SUCCESS"
+          },
+          "A": {
+            "call_started_at": "2026-10-06T20:20:20.950052+09:00",
+            "call_started_ns": 21689124669800,
+            "response_at": "2026-10-06T20:20:20.979847+09:00",
+            "http_status": 409,
+            "error_code": "OUT_OF_STOCK",
+            "outcome": "SOLD_OUT"
+          }
+        },
+        "overlap": true,
+        "gap_reference": "first_server_admission",
+        "inventory_checks_passed": true,
+        "timing_checks_passed": true,
+        "server_order": [
+          "B",
+          "A"
+        ],
+        "server_admissions": [
+          {
+            "ticket": 0,
+            "customer": "B",
+            "monotonic_ns": 21689075186900
+          },
+          {
+            "ticket": 1,
+            "customer": "A",
+            "monotonic_ns": 21689153474000
+          }
+        ],
+        "actual_send_order": [
+          "B",
+          "A"
+        ],
+        "send_gap_ms": 79.25,
+        "server_arrival_gap_ms": 78.287,
+        "successful_customers": [
+          "B"
+        ],
+        "sold_out_customers": [
+          "A"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "TC-CON-001[run002-A-first-14ms]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1708465999981854,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "2회차: 무작위로 A 먼저, 14ms 간격 선택. 두 요청 중첩 후 서버 접수 순서대로 결과 검증. seed=1269109452",
+      "expected": "서버 선접수 고객=201, 나머지=409 OUT_OF_STOCK. 재고=0, 저장 주문=1. 처리 중첩 및 설정 간격≤실측 서버 접수 간격<100ms.",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrandom_order_evidence: {\"seed\": 1269109452, \"repeat_index\": 2, \"first_sender\": \"A\", \"gap_ms\": 14, \"started_at\": \"2026-10-06T20:20:21.044657+09:00\", \"events\": {\"A\": {\"call_started_at\": \"2026-10-06T20:20:21.075276+09:00\", \"call_started_ns\": 21689249851500, \"response_at\": \"2026-10-06T20:20:21.153530+09:00\", \"http_status\": 201, \"error_code\": null, \"outcome\": \"SUCCESS\"}, \"B\": {\"call_started_at\": \"2026-10-06T20:20:21.120025+09:00\", \"call_started_ns\": 21689294648700, \"response_at\": \"2026-10-06T20:20:21.153756+09:00\", \"http_status\": 409, \"error_code\": \"OUT_OF_STOCK\", \"outcome\": \"SOLD_OUT\"}}, \"overlap\": true, \"gap_reference\": \"first_server_admission\", \"inventory_checks_passed\": true, \"timing_checks_passed\": true, \"server_order\": [\"A\", \"B\"], \"server_admissions\": [{\"ticket\": 0, \"customer\": \"A\", \"monotonic_ns\": 21689280208300}, {\"ticket\": 1, \"customer\": \"B\", \"monotonic_ns\": 21689327012900}], \"actual_send_order\": [\"A\", \"B\"], \"send_gap_ms\": 44.797, \"server_arrival_gap_ms\": 46.805, \"successful_customers\": [\"A\"], \"sold_out_customers\": [\"B\"]}\nrandom_seed: 1269109452",
+      "source": "test_stock_api.py::test_concurrent_last_stock[run002-A-first-14ms]",
+      "random_event": {
+        "seed": 1269109452,
+        "repeat_index": 2,
+        "first_sender": "A",
+        "gap_ms": 14,
+        "started_at": "2026-10-06T20:20:21.044657+09:00",
+        "events": {
+          "A": {
+            "call_started_at": "2026-10-06T20:20:21.075276+09:00",
+            "call_started_ns": 21689249851500,
+            "response_at": "2026-10-06T20:20:21.153530+09:00",
+            "http_status": 201,
+            "error_code": null,
+            "outcome": "SUCCESS"
+          },
+          "B": {
+            "call_started_at": "2026-10-06T20:20:21.120025+09:00",
+            "call_started_ns": 21689294648700,
+            "response_at": "2026-10-06T20:20:21.153756+09:00",
+            "http_status": 409,
+            "error_code": "OUT_OF_STOCK",
+            "outcome": "SOLD_OUT"
+          }
+        },
+        "overlap": true,
+        "gap_reference": "first_server_admission",
+        "inventory_checks_passed": true,
+        "timing_checks_passed": true,
+        "server_order": [
+          "A",
+          "B"
+        ],
+        "server_admissions": [
+          {
+            "ticket": 0,
+            "customer": "A",
+            "monotonic_ns": 21689280208300
+          },
+          {
+            "ticket": 1,
+            "customer": "B",
+            "monotonic_ns": 21689327012900
+          }
+        ],
+        "actual_send_order": [
+          "A",
+          "B"
+        ],
+        "send_gap_ms": 44.797,
+        "server_arrival_gap_ms": 46.805,
+        "successful_customers": [
+          "A"
+        ],
+        "sold_out_customers": [
+          "B"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "TC-CON-001[run003-A-first-34ms]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1717811000016809,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "3회차: 무작위로 A 먼저, 34ms 간격 선택. 두 요청 중첩 후 서버 접수 순서대로 결과 검증. seed=1269109452",
+      "expected": "서버 선접수 고객=201, 나머지=409 OUT_OF_STOCK. 재고=0, 저장 주문=1. 처리 중첩 및 설정 간격≤실측 서버 접수 간격<100ms.",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrandom_order_evidence: {\"seed\": 1269109452, \"repeat_index\": 3, \"first_sender\": \"A\", \"gap_ms\": 34, \"started_at\": \"2026-10-06T20:20:21.216184+09:00\", \"events\": {\"A\": {\"call_started_at\": \"2026-10-06T20:20:21.247266+09:00\", \"call_started_ns\": 21689421837600, \"response_at\": \"2026-10-06T20:20:21.347681+09:00\", \"http_status\": 201, \"error_code\": null, \"outcome\": \"SUCCESS\"}, \"B\": {\"call_started_at\": \"2026-10-06T20:20:21.312129+09:00\", \"call_started_ns\": 21689486732000, \"response_at\": \"2026-10-06T20:20:21.348309+09:00\", \"http_status\": 409, \"error_code\": \"OUT_OF_STOCK\", \"outcome\": \"SOLD_OUT\"}}, \"overlap\": true, \"gap_reference\": \"first_server_admission\", \"inventory_checks_passed\": true, \"timing_checks_passed\": true, \"server_order\": [\"A\", \"B\"], \"server_admissions\": [{\"ticket\": 0, \"customer\": \"A\", \"monotonic_ns\": 21689452581300}, {\"ticket\": 1, \"customer\": \"B\", \"monotonic_ns\": 21689515868600}], \"actual_send_order\": [\"A\", \"B\"], \"send_gap_ms\": 64.894, \"server_arrival_gap_ms\": 63.287, \"successful_customers\": [\"A\"], \"sold_out_customers\": [\"B\"]}\nrandom_seed: 1269109452",
+      "source": "test_stock_api.py::test_concurrent_last_stock[run003-A-first-34ms]",
+      "random_event": {
+        "seed": 1269109452,
+        "repeat_index": 3,
+        "first_sender": "A",
+        "gap_ms": 34,
+        "started_at": "2026-10-06T20:20:21.216184+09:00",
+        "events": {
+          "A": {
+            "call_started_at": "2026-10-06T20:20:21.247266+09:00",
+            "call_started_ns": 21689421837600,
+            "response_at": "2026-10-06T20:20:21.347681+09:00",
+            "http_status": 201,
+            "error_code": null,
+            "outcome": "SUCCESS"
+          },
+          "B": {
+            "call_started_at": "2026-10-06T20:20:21.312129+09:00",
+            "call_started_ns": 21689486732000,
+            "response_at": "2026-10-06T20:20:21.348309+09:00",
+            "http_status": 409,
+            "error_code": "OUT_OF_STOCK",
+            "outcome": "SOLD_OUT"
+          }
+        },
+        "overlap": true,
+        "gap_reference": "first_server_admission",
+        "inventory_checks_passed": true,
+        "timing_checks_passed": true,
+        "server_order": [
+          "A",
+          "B"
+        ],
+        "server_admissions": [
+          {
+            "ticket": 0,
+            "customer": "A",
+            "monotonic_ns": 21689452581300
+          },
+          {
+            "ticket": 1,
+            "customer": "B",
+            "monotonic_ns": 21689515868600
+          }
+        ],
+        "actual_send_order": [
+          "A",
+          "B"
+        ],
+        "send_gap_ms": 64.894,
+        "server_arrival_gap_ms": 63.287,
+        "successful_customers": [
+          "A"
+        ],
+        "sold_out_customers": [
+          "B"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "TC-CON-002",
+      "title": "동일 주문 병렬 취소",
+      "status": "PASS",
+      "duration": 0.12389980000079959,
+      "precondition": "P001 1개 주문 완료, 남은 재고 0",
+      "procedure": "두 스레드에서 동일 주문에 대해 동시에 취소 HTTP 요청한다.",
+      "expected": "모두 200, 복구 수량은 0과 1, 최종 재고=1, CANCELLED",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.",
+      "source": "test_stock_api.py::test_parallel_cancel_restores_stock_only_once"
+    }
+  ],
+  "random_events": [
+    {
+      "seed": 1269109452,
+      "repeat_index": 1,
+      "first_sender": "B",
+      "gap_ms": 49,
+      "started_at": "2026-10-06T20:20:20.839093+09:00",
+      "events": {
+        "B": {
+          "call_started_at": "2026-10-06T20:20:20.870847+09:00",
+          "call_started_ns": 21689045419800,
+          "response_at": "2026-10-06T20:20:20.980024+09:00",
+          "http_status": 201,
+          "error_code": null,
+          "outcome": "SUCCESS"
+        },
+        "A": {
+          "call_started_at": "2026-10-06T20:20:20.950052+09:00",
+          "call_started_ns": 21689124669800,
+          "response_at": "2026-10-06T20:20:20.979847+09:00",
+          "http_status": 409,
+          "error_code": "OUT_OF_STOCK",
+          "outcome": "SOLD_OUT"
+        }
+      },
+      "overlap": true,
+      "gap_reference": "first_server_admission",
+      "inventory_checks_passed": true,
+      "timing_checks_passed": true,
+      "server_order": [
+        "B",
+        "A"
+      ],
+      "server_admissions": [
+        {
+          "ticket": 0,
+          "customer": "B",
+          "monotonic_ns": 21689075186900
+        },
+        {
+          "ticket": 1,
+          "customer": "A",
+          "monotonic_ns": 21689153474000
+        }
+      ],
+      "actual_send_order": [
+        "B",
+        "A"
+      ],
+      "send_gap_ms": 79.25,
+      "server_arrival_gap_ms": 78.287,
+      "successful_customers": [
+        "B"
+      ],
+      "sold_out_customers": [
+        "A"
+      ],
+      "test_status": "PASS"
+    },
+    {
+      "seed": 1269109452,
+      "repeat_index": 2,
+      "first_sender": "A",
+      "gap_ms": 14,
+      "started_at": "2026-10-06T20:20:21.044657+09:00",
+      "events": {
+        "A": {
+          "call_started_at": "2026-10-06T20:20:21.075276+09:00",
+          "call_started_ns": 21689249851500,
+          "response_at": "2026-10-06T20:20:21.153530+09:00",
+          "http_status": 201,
+          "error_code": null,
+          "outcome": "SUCCESS"
+        },
+        "B": {
+          "call_started_at": "2026-10-06T20:20:21.120025+09:00",
+          "call_started_ns": 21689294648700,
+          "response_at": "2026-10-06T20:20:21.153756+09:00",
+          "http_status": 409,
+          "error_code": "OUT_OF_STOCK",
+          "outcome": "SOLD_OUT"
+        }
+      },
+      "overlap": true,
+      "gap_reference": "first_server_admission",
+      "inventory_checks_passed": true,
+      "timing_checks_passed": true,
+      "server_order": [
+        "A",
+        "B"
+      ],
+      "server_admissions": [
+        {
+          "ticket": 0,
+          "customer": "A",
+          "monotonic_ns": 21689280208300
+        },
+        {
+          "ticket": 1,
+          "customer": "B",
+          "monotonic_ns": 21689327012900
+        }
+      ],
+      "actual_send_order": [
+        "A",
+        "B"
+      ],
+      "send_gap_ms": 44.797,
+      "server_arrival_gap_ms": 46.805,
+      "successful_customers": [
+        "A"
+      ],
+      "sold_out_customers": [
+        "B"
+      ],
+      "test_status": "PASS"
+    },
+    {
+      "seed": 1269109452,
+      "repeat_index": 3,
+      "first_sender": "A",
+      "gap_ms": 34,
+      "started_at": "2026-10-06T20:20:21.216184+09:00",
+      "events": {
+        "A": {
+          "call_started_at": "2026-10-06T20:20:21.247266+09:00",
+          "call_started_ns": 21689421837600,
+          "response_at": "2026-10-06T20:20:21.347681+09:00",
+          "http_status": 201,
+          "error_code": null,
+          "outcome": "SUCCESS"
+        },
+        "B": {
+          "call_started_at": "2026-10-06T20:20:21.312129+09:00",
+          "call_started_ns": 21689486732000,
+          "response_at": "2026-10-06T20:20:21.348309+09:00",
+          "http_status": 409,
+          "error_code": "OUT_OF_STOCK",
+          "outcome": "SOLD_OUT"
+        }
+      },
+      "overlap": true,
+      "gap_reference": "first_server_admission",
+      "inventory_checks_passed": true,
+      "timing_checks_passed": true,
+      "server_order": [
+        "A",
+        "B"
+      ],
+      "server_admissions": [
+        {
+          "ticket": 0,
+          "customer": "A",
+          "monotonic_ns": 21689452581300
+        },
+        {
+          "ticket": 1,
+          "customer": "B",
+          "monotonic_ns": 21689515868600
+        }
+      ],
+      "actual_send_order": [
+        "A",
+        "B"
+      ],
+      "send_gap_ms": 64.894,
+      "server_arrival_gap_ms": 63.287,
+      "successful_customers": [
+        "A"
+      ],
+      "sold_out_customers": [
+        "B"
+      ],
+      "test_status": "PASS"
+    }
+  ]
+}

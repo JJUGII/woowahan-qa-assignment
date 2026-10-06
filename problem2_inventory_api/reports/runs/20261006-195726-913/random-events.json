@@ -1,0 +1,2802 @@
+[
+  {
+    "seed": 2992690177,
+    "repeat_index": 1,
+    "first_sender": "B",
+    "gap_ms": 23,
+    "started_at": "2026-10-06T19:57:29.612439+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:29.638086+09:00",
+        "call_started_ns": 20317812665200,
+        "response_at": "2026-10-06T19:57:29.687209+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:29.661439+09:00",
+        "call_started_ns": 20317836111900,
+        "response_at": "2026-10-06T19:57:29.687479+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20317823448300
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20317859919100
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 23.447,
+    "server_arrival_gap_ms": 36.471,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 2,
+    "first_sender": "B",
+    "gap_ms": 49,
+    "started_at": "2026-10-06T19:57:29.732369+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:29.743607+09:00",
+        "call_started_ns": 20317918175500,
+        "response_at": "2026-10-06T19:57:29.827802+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:29.793166+09:00",
+        "call_started_ns": 20317967810100,
+        "response_at": "2026-10-06T19:57:29.827460+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20317953213400
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20318001037400
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 49.635,
+    "server_arrival_gap_ms": 47.824,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 3,
+    "first_sender": "A",
+    "gap_ms": 35,
+    "started_at": "2026-10-06T19:57:29.874091+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:29.904439+09:00",
+        "call_started_ns": 20318079019100,
+        "response_at": "2026-10-06T19:57:29.967119+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:29.939769+09:00",
+        "call_started_ns": 20318114404700,
+        "response_at": "2026-10-06T19:57:29.966548+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20318109401100
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20318140427700
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 35.386,
+    "server_arrival_gap_ms": 31.027,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 4,
+    "first_sender": "A",
+    "gap_ms": 13,
+    "started_at": "2026-10-06T19:57:30.028554+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:30.059617+09:00",
+        "call_started_ns": 20318234199800,
+        "response_at": "2026-10-06T19:57:30.106378+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:30.073271+09:00",
+        "call_started_ns": 20318247876000,
+        "response_at": "2026-10-06T19:57:30.106878+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20318264176000
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20318280116700
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 13.676,
+    "server_arrival_gap_ms": 15.941,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 5,
+    "first_sender": "A",
+    "gap_ms": 44,
+    "started_at": "2026-10-06T19:57:30.154021+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:30.185332+09:00",
+        "call_started_ns": 20318359900500,
+        "response_at": "2026-10-06T19:57:30.262571+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:30.229775+09:00",
+        "call_started_ns": 20318404441300,
+        "response_at": "2026-10-06T19:57:30.263176+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20318389589900
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20318436305900
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 44.541,
+    "server_arrival_gap_ms": 46.716,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 6,
+    "first_sender": "B",
+    "gap_ms": 44,
+    "started_at": "2026-10-06T19:57:30.308833+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:30.340226+09:00",
+        "call_started_ns": 20318514806500,
+        "response_at": "2026-10-06T19:57:30.418352+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:30.384771+09:00",
+        "call_started_ns": 20318559483300,
+        "response_at": "2026-10-06T19:57:30.418221+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20318544295000
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20318591971600
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 44.677,
+    "server_arrival_gap_ms": 47.677,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 7,
+    "first_sender": "B",
+    "gap_ms": 15,
+    "started_at": "2026-10-06T19:57:30.464970+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:30.495251+09:00",
+        "call_started_ns": 20318669826100,
+        "response_at": "2026-10-06T19:57:30.541186+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:30.510905+09:00",
+        "call_started_ns": 20318685532100,
+        "response_at": "2026-10-06T19:57:30.540971+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20318698307200
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20318714030000
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 15.706,
+    "server_arrival_gap_ms": 15.723,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 8,
+    "first_sender": "A",
+    "gap_ms": 37,
+    "started_at": "2026-10-06T19:57:30.587370+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:30.618313+09:00",
+        "call_started_ns": 20318792891900,
+        "response_at": "2026-10-06T19:57:30.681715+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:30.655504+09:00",
+        "call_started_ns": 20318830191400,
+        "response_at": "2026-10-06T19:57:30.681579+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20318823990100
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20318855189800
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 37.3,
+    "server_arrival_gap_ms": 31.2,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 9,
+    "first_sender": "A",
+    "gap_ms": 18,
+    "started_at": "2026-10-06T19:57:30.728512+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:30.760367+09:00",
+        "call_started_ns": 20318934937300,
+        "response_at": "2026-10-06T19:57:30.807194+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:30.778629+09:00",
+        "call_started_ns": 20318953251400,
+        "response_at": "2026-10-06T19:57:30.807908+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20318964510900
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20318980860600
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 18.314,
+    "server_arrival_gap_ms": 16.35,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 10,
+    "first_sender": "A",
+    "gap_ms": 46,
+    "started_at": "2026-10-06T19:57:30.855208+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:30.885975+09:00",
+        "call_started_ns": 20319060544100,
+        "response_at": "2026-10-06T19:57:30.962774+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:30.932180+09:00",
+        "call_started_ns": 20319106803100,
+        "response_at": "2026-10-06T19:57:30.963244+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20319091251800
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20319136437500
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 46.259,
+    "server_arrival_gap_ms": 45.186,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 11,
+    "first_sender": "B",
+    "gap_ms": 10,
+    "started_at": "2026-10-06T19:57:31.009324+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:31.040534+09:00",
+        "call_started_ns": 20319215123200,
+        "response_at": "2026-10-06T19:57:31.086481+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:31.051130+09:00",
+        "call_started_ns": 20319225730600,
+        "response_at": "2026-10-06T19:57:31.086354+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20319244959900
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20319259882000
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 10.607,
+    "server_arrival_gap_ms": 14.922,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 12,
+    "first_sender": "A",
+    "gap_ms": 17,
+    "started_at": "2026-10-06T19:57:31.133482+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:31.163999+09:00",
+        "call_started_ns": 20319338568300,
+        "response_at": "2026-10-06T19:57:31.210861+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:31.181270+09:00",
+        "call_started_ns": 20319355876400,
+        "response_at": "2026-10-06T19:57:31.211015+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20319368639100
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20319384341600
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 17.308,
+    "server_arrival_gap_ms": 15.703,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 13,
+    "first_sender": "B",
+    "gap_ms": 45,
+    "started_at": "2026-10-06T19:57:31.257804+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:31.288640+09:00",
+        "call_started_ns": 20319463237500,
+        "response_at": "2026-10-06T19:57:31.366901+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:31.334372+09:00",
+        "call_started_ns": 20319509020000,
+        "response_at": "2026-10-06T19:57:31.366594+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20319493687100
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20319540071800
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 45.782,
+    "server_arrival_gap_ms": 46.385,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 14,
+    "first_sender": "A",
+    "gap_ms": 32,
+    "started_at": "2026-10-06T19:57:31.413756+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:31.443546+09:00",
+        "call_started_ns": 20319618150500,
+        "response_at": "2026-10-06T19:57:31.505415+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:31.475724+09:00",
+        "call_started_ns": 20319650330000,
+        "response_at": "2026-10-06T19:57:31.505582+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20319648091700
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20319678672300
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 32.179,
+    "server_arrival_gap_ms": 30.581,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 15,
+    "first_sender": "B",
+    "gap_ms": 39,
+    "started_at": "2026-10-06T19:57:31.552548+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:31.583886+09:00",
+        "call_started_ns": 20319758457400,
+        "response_at": "2026-10-06T19:57:31.646209+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:31.623454+09:00",
+        "call_started_ns": 20319798057700,
+        "response_at": "2026-10-06T19:57:31.646441+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20319788328000
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20319819815600
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 39.6,
+    "server_arrival_gap_ms": 31.488,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 16,
+    "first_sender": "A",
+    "gap_ms": 39,
+    "started_at": "2026-10-06T19:57:31.708542+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:31.740212+09:00",
+        "call_started_ns": 20319914795500,
+        "response_at": "2026-10-06T19:57:31.803011+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:31.779684+09:00",
+        "call_started_ns": 20319954287200,
+        "response_at": "2026-10-06T19:57:31.803565+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20319944639900
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20319975830800
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 39.492,
+    "server_arrival_gap_ms": 31.191,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 17,
+    "first_sender": "A",
+    "gap_ms": 42,
+    "started_at": "2026-10-06T19:57:31.848725+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:31.880859+09:00",
+        "call_started_ns": 20320055427800,
+        "response_at": "2026-10-06T19:57:31.958882+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:31.923167+09:00",
+        "call_started_ns": 20320097816500,
+        "response_at": "2026-10-06T19:57:31.958789+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20320085187000
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20320132300100
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 42.389,
+    "server_arrival_gap_ms": 47.113,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 18,
+    "first_sender": "B",
+    "gap_ms": 12,
+    "started_at": "2026-10-06T19:57:32.005376+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:32.035688+09:00",
+        "call_started_ns": 20320210269900,
+        "response_at": "2026-10-06T19:57:32.083055+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:32.048074+09:00",
+        "call_started_ns": 20320222735800,
+        "response_at": "2026-10-06T19:57:32.083252+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20320240192200
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20320256388300
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 12.466,
+    "server_arrival_gap_ms": 16.196,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 19,
+    "first_sender": "A",
+    "gap_ms": 34,
+    "started_at": "2026-10-06T19:57:32.129416+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:32.141447+09:00",
+        "call_started_ns": 20320316027000,
+        "response_at": "2026-10-06T19:57:32.206713+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:32.176092+09:00",
+        "call_started_ns": 20320350760600,
+        "response_at": "2026-10-06T19:57:32.206395+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20320360057800
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20320379816500
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 34.734,
+    "server_arrival_gap_ms": 19.759,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 20,
+    "first_sender": "B",
+    "gap_ms": 46,
+    "started_at": "2026-10-06T19:57:32.253839+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:32.284167+09:00",
+        "call_started_ns": 20320458769900,
+        "response_at": "2026-10-06T19:57:32.362889+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:32.330749+09:00",
+        "call_started_ns": 20320505375800,
+        "response_at": "2026-10-06T19:57:32.363053+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20320489423000
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20320536451900
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 46.606,
+    "server_arrival_gap_ms": 47.029,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 21,
+    "first_sender": "B",
+    "gap_ms": 38,
+    "started_at": "2026-10-06T19:57:32.410877+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:32.442087+09:00",
+        "call_started_ns": 20320616678600,
+        "response_at": "2026-10-06T19:57:32.519967+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:32.480399+09:00",
+        "call_started_ns": 20320655023600,
+        "response_at": "2026-10-06T19:57:32.520077+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20320647252000
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20320693505200
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 38.345,
+    "server_arrival_gap_ms": 46.253,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 22,
+    "first_sender": "B",
+    "gap_ms": 25,
+    "started_at": "2026-10-06T19:57:32.566782+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:32.580157+09:00",
+        "call_started_ns": 20320754772800,
+        "response_at": "2026-10-06T19:57:32.617758+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:32.605599+09:00",
+        "call_started_ns": 20320780313300,
+        "response_at": "2026-10-06T19:57:32.617182+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20320790220700
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20320791162700
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 25.541,
+    "server_arrival_gap_ms": 0.942,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 23,
+    "first_sender": "A",
+    "gap_ms": 32,
+    "started_at": "2026-10-06T19:57:32.660777+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:32.690918+09:00",
+        "call_started_ns": 20320865504200,
+        "response_at": "2026-10-06T19:57:32.754767+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:32.723523+09:00",
+        "call_started_ns": 20320898118600,
+        "response_at": "2026-10-06T19:57:32.754107+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20320896896700
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20320927680100
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 32.614,
+    "server_arrival_gap_ms": 30.783,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 24,
+    "first_sender": "A",
+    "gap_ms": 13,
+    "started_at": "2026-10-06T19:57:32.802114+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:32.833370+09:00",
+        "call_started_ns": 20321007956500,
+        "response_at": "2026-10-06T19:57:32.880938+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:32.846807+09:00",
+        "call_started_ns": 20321021463900,
+        "response_at": "2026-10-06T19:57:32.881324+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20321019779700
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20321054325300
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 13.507,
+    "server_arrival_gap_ms": 34.546,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 25,
+    "first_sender": "A",
+    "gap_ms": 28,
+    "started_at": "2026-10-06T19:57:32.928374+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:32.944811+09:00",
+        "call_started_ns": 20321119381500,
+        "response_at": "2026-10-06T19:57:32.984489+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:32.973232+09:00",
+        "call_started_ns": 20321147854400,
+        "response_at": "2026-10-06T19:57:32.985081+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20321156625700
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20321158004100
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 28.473,
+    "server_arrival_gap_ms": 1.378,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 26,
+    "first_sender": "B",
+    "gap_ms": 49,
+    "started_at": "2026-10-06T19:57:33.052281+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:33.083614+09:00",
+        "call_started_ns": 20321258211200,
+        "response_at": "2026-10-06T19:57:33.162158+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:33.132835+09:00",
+        "call_started_ns": 20321307421900,
+        "response_at": "2026-10-06T19:57:33.161789+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20321268964900
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20321334699200
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 49.211,
+    "server_arrival_gap_ms": 65.734,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 27,
+    "first_sender": "A",
+    "gap_ms": 23,
+    "started_at": "2026-10-06T19:57:33.207866+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:33.231632+09:00",
+        "call_started_ns": 20321406213600,
+        "response_at": "2026-10-06T19:57:33.269615+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:33.255183+09:00",
+        "call_started_ns": 20321429808300,
+        "response_at": "2026-10-06T19:57:33.269826+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20321421563000
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20321442895000
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 23.595,
+    "server_arrival_gap_ms": 21.332,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 28,
+    "first_sender": "A",
+    "gap_ms": 32,
+    "started_at": "2026-10-06T19:57:33.317386+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:33.330707+09:00",
+        "call_started_ns": 20321505294900,
+        "response_at": "2026-10-06T19:57:33.376748+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:33.363302+09:00",
+        "call_started_ns": 20321538008000,
+        "response_at": "2026-10-06T19:57:33.376242+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20321539128700
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20321549078900
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 32.713,
+    "server_arrival_gap_ms": 9.95,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 29,
+    "first_sender": "B",
+    "gap_ms": 12,
+    "started_at": "2026-10-06T19:57:33.442269+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:33.454773+09:00",
+        "call_started_ns": 20321629389800,
+        "response_at": "2026-10-06T19:57:33.480471+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:33.467006+09:00",
+        "call_started_ns": 20321641610900,
+        "response_at": "2026-10-06T19:57:33.480574+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20321639957800
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20321654154100
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 12.221,
+    "server_arrival_gap_ms": 14.196,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 30,
+    "first_sender": "B",
+    "gap_ms": 25,
+    "started_at": "2026-10-06T19:57:33.519576+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:33.549805+09:00",
+        "call_started_ns": 20321724391700,
+        "response_at": "2026-10-06T19:57:33.611478+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:33.575284+09:00",
+        "call_started_ns": 20321749871100,
+        "response_at": "2026-10-06T19:57:33.611764+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20321761230800
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20321785246200
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 25.479,
+    "server_arrival_gap_ms": 24.015,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 31,
+    "first_sender": "A",
+    "gap_ms": 11,
+    "started_at": "2026-10-06T19:57:33.659953+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:33.672885+09:00",
+        "call_started_ns": 20321847474600,
+        "response_at": "2026-10-06T19:57:33.722257+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:33.684203+09:00",
+        "call_started_ns": 20321858807700,
+        "response_at": "2026-10-06T19:57:33.722537+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20321880031400
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20321895210200
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 11.333,
+    "server_arrival_gap_ms": 15.179,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 32,
+    "first_sender": "B",
+    "gap_ms": 35,
+    "started_at": "2026-10-06T19:57:33.769218+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:33.782393+09:00",
+        "call_started_ns": 20321956964000,
+        "response_at": "2026-10-06T19:57:33.847274+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:33.817783+09:00",
+        "call_started_ns": 20321992458900,
+        "response_at": "2026-10-06T19:57:33.847494+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20321989967600
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20322020922100
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 35.495,
+    "server_arrival_gap_ms": 30.954,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 33,
+    "first_sender": "A",
+    "gap_ms": 16,
+    "started_at": "2026-10-06T19:57:33.894491+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:33.907839+09:00",
+        "call_started_ns": 20322082431000,
+        "response_at": "2026-10-06T19:57:33.954719+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:33.924298+09:00",
+        "call_started_ns": 20322098933700,
+        "response_at": "2026-10-06T19:57:33.955033+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20322093217600
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20322128233800
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 16.503,
+    "server_arrival_gap_ms": 35.016,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 34,
+    "first_sender": "A",
+    "gap_ms": 15,
+    "started_at": "2026-10-06T19:57:34.001667+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:34.032981+09:00",
+        "call_started_ns": 20322207557100,
+        "response_at": "2026-10-06T19:57:34.078724+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:34.048577+09:00",
+        "call_started_ns": 20322223163900,
+        "response_at": "2026-10-06T19:57:34.078831+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20322218426500
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20322252433700
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 15.607,
+    "server_arrival_gap_ms": 34.007,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 35,
+    "first_sender": "A",
+    "gap_ms": 10,
+    "started_at": "2026-10-06T19:57:34.110292+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:34.141327+09:00",
+        "call_started_ns": 20322315904200,
+        "response_at": "2026-10-06T19:57:34.188391+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:34.152103+09:00",
+        "call_started_ns": 20322326706900,
+        "response_at": "2026-10-06T19:57:34.188008+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20322346418100
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20322361074700
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 10.803,
+    "server_arrival_gap_ms": 14.657,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 36,
+    "first_sender": "B",
+    "gap_ms": 48,
+    "started_at": "2026-10-06T19:57:34.235244+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:34.247451+09:00",
+        "call_started_ns": 20322422033700,
+        "response_at": "2026-10-06T19:57:34.307682+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:34.295666+09:00",
+        "call_started_ns": 20322470297700,
+        "response_at": "2026-10-06T19:57:34.308579+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20322454269800
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20322481293800
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 48.264,
+    "server_arrival_gap_ms": 27.024,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 37,
+    "first_sender": "B",
+    "gap_ms": 50,
+    "started_at": "2026-10-06T19:57:34.373908+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:34.387249+09:00",
+        "call_started_ns": 20322561820500,
+        "response_at": "2026-10-06T19:57:34.467229+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:34.437502+09:00",
+        "call_started_ns": 20322612112300,
+        "response_at": "2026-10-06T19:57:34.467525+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20322594945000
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20322641011200
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 50.292,
+    "server_arrival_gap_ms": 46.066,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 38,
+    "first_sender": "A",
+    "gap_ms": 15,
+    "started_at": "2026-10-06T19:57:34.514450+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:34.544694+09:00",
+        "call_started_ns": 20322719320500,
+        "response_at": "2026-10-06T19:57:34.576927+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:34.560085+09:00",
+        "call_started_ns": 20322734706300,
+        "response_at": "2026-10-06T19:57:34.577164+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20322744880800
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20322749871500
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 15.386,
+    "server_arrival_gap_ms": 4.991,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 39,
+    "first_sender": "B",
+    "gap_ms": 43,
+    "started_at": "2026-10-06T19:57:34.623708+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:34.656056+09:00",
+        "call_started_ns": 20322830642300,
+        "response_at": "2026-10-06T19:57:34.732924+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:34.699863+09:00",
+        "call_started_ns": 20322874582300,
+        "response_at": "2026-10-06T19:57:34.733557+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20322860842700
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20322906746400
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 43.94,
+    "server_arrival_gap_ms": 45.904,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 40,
+    "first_sender": "B",
+    "gap_ms": 16,
+    "started_at": "2026-10-06T19:57:34.781282+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:34.811515+09:00",
+        "call_started_ns": 20322986093700,
+        "response_at": "2026-10-06T19:57:34.857874+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:34.827763+09:00",
+        "call_started_ns": 20323002406500,
+        "response_at": "2026-10-06T19:57:34.857687+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20323014967700
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20323030907400
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 16.313,
+    "server_arrival_gap_ms": 15.94,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 41,
+    "first_sender": "A",
+    "gap_ms": 47,
+    "started_at": "2026-10-06T19:57:34.905633+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:34.918543+09:00",
+        "call_started_ns": 20323093123300,
+        "response_at": "2026-10-06T19:57:34.978004+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:34.966033+09:00",
+        "call_started_ns": 20323140618800,
+        "response_at": "2026-10-06T19:57:34.978451+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20323124629700
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20323151842400
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 47.495,
+    "server_arrival_gap_ms": 27.213,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 42,
+    "first_sender": "B",
+    "gap_ms": 43,
+    "started_at": "2026-10-06T19:57:35.043349+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:35.074317+09:00",
+        "call_started_ns": 20323248896100,
+        "response_at": "2026-10-06T19:57:35.130472+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:35.117710+09:00",
+        "call_started_ns": 20323292380300,
+        "response_at": "2026-10-06T19:57:35.130297+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20323279371600
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20323304016500
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 43.484,
+    "server_arrival_gap_ms": 24.645,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 43,
+    "first_sender": "B",
+    "gap_ms": 39,
+    "started_at": "2026-10-06T19:57:35.199864+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:35.212413+09:00",
+        "call_started_ns": 20323386989600,
+        "response_at": "2026-10-06T19:57:35.269432+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:35.251646+09:00",
+        "call_started_ns": 20323426283200,
+        "response_at": "2026-10-06T19:57:35.269610+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20323420222200
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20323442941900
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 39.294,
+    "server_arrival_gap_ms": 22.72,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 44,
+    "first_sender": "A",
+    "gap_ms": 11,
+    "started_at": "2026-10-06T19:57:35.308934+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:35.341436+09:00",
+        "call_started_ns": 20323516016100,
+        "response_at": "2026-10-06T19:57:35.389668+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:35.352593+09:00",
+        "call_started_ns": 20323527169900,
+        "response_at": "2026-10-06T19:57:35.389342+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20323526583500
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20323562772000
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 11.154,
+    "server_arrival_gap_ms": 36.188,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 45,
+    "first_sender": "A",
+    "gap_ms": 22,
+    "started_at": "2026-10-06T19:57:35.435087+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:35.466175+09:00",
+        "call_started_ns": 20323640753300,
+        "response_at": "2026-10-06T19:57:35.512336+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:35.488385+09:00",
+        "call_started_ns": 20323663051700,
+        "response_at": "2026-10-06T19:57:35.512146+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20323652374000
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20323685651700
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 22.298,
+    "server_arrival_gap_ms": 33.278,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 46,
+    "first_sender": "A",
+    "gap_ms": 17,
+    "started_at": "2026-10-06T19:57:35.558573+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:35.589996+09:00",
+        "call_started_ns": 20323764589000,
+        "response_at": "2026-10-06T19:57:35.622157+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:35.607479+09:00",
+        "call_started_ns": 20323782111600,
+        "response_at": "2026-10-06T19:57:35.622281+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20323793673800
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20323795288300
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 17.523,
+    "server_arrival_gap_ms": 1.615,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 47,
+    "first_sender": "B",
+    "gap_ms": 26,
+    "started_at": "2026-10-06T19:57:35.668458+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:35.681318+09:00",
+        "call_started_ns": 20323855919600,
+        "response_at": "2026-10-06T19:57:35.720635+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:35.707903+09:00",
+        "call_started_ns": 20323882509100,
+        "response_at": "2026-10-06T19:57:35.720535+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20323893441600
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20323894275500
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 26.59,
+    "server_arrival_gap_ms": 0.834,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 48,
+    "first_sender": "B",
+    "gap_ms": 23,
+    "started_at": "2026-10-06T19:57:35.762358+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T19:57:35.792177+09:00",
+        "call_started_ns": 20323966776000,
+        "response_at": "2026-10-06T19:57:35.828368+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T19:57:35.815706+09:00",
+        "call_started_ns": 20323990352800,
+        "response_at": "2026-10-06T19:57:35.828279+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20324000961800
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20324001946300
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 23.577,
+    "server_arrival_gap_ms": 0.985,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 49,
+    "first_sender": "A",
+    "gap_ms": 32,
+    "started_at": "2026-10-06T19:57:35.870473+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:35.892658+09:00",
+        "call_started_ns": 20324067270100,
+        "response_at": "2026-10-06T19:57:35.949573+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:35.925121+09:00",
+        "call_started_ns": 20324099744700,
+        "response_at": "2026-10-06T19:57:35.949483+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20324079626200
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20324122927900
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 32.475,
+    "server_arrival_gap_ms": 43.302,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2992690177,
+    "repeat_index": 50,
+    "first_sender": "A",
+    "gap_ms": 28,
+    "started_at": "2026-10-06T19:57:35.996360+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T19:57:36.008236+09:00",
+        "call_started_ns": 20324182817300,
+        "response_at": "2026-10-06T19:57:36.053706+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T19:57:36.036718+09:00",
+        "call_started_ns": 20324211319100,
+        "response_at": "2026-10-06T19:57:36.053294+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20324225706100
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20324226570600
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 28.502,
+    "server_arrival_gap_ms": 0.865,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  }
+]

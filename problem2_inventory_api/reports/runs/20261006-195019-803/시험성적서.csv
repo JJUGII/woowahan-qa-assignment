@@ -1,0 +1,201 @@
+﻿id,title,status,duration,precondition,procedure,expected,actual,source
+TC-CON-001[10ms-run01],마지막 재고 1개 동시 주문,PASS,0.15779940000356873,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 10ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 1회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 10
+server_arrival_gap_ms: 45.662
+repeat_index: 1",test_stock_api.py::test_concurrent_last_stock[10ms-run01]
+TC-CON-001[10ms-run02],마지막 재고 1개 동시 주문,PASS,0.1551569999937783,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 10ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 2회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 10
+server_arrival_gap_ms: 31.331
+repeat_index: 2",test_stock_api.py::test_concurrent_last_stock[10ms-run02]
+TC-CON-001[10ms-run03],마지막 재고 1개 동시 주문,PASS,0.12326169999869308,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 10ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 3회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 10
+server_arrival_gap_ms: 33.715
+repeat_index: 3",test_stock_api.py::test_concurrent_last_stock[10ms-run03]
+TC-CON-001[10ms-run04],마지막 재고 1개 동시 주문,PASS,0.17286570000214851,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 10ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 4회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 10
+server_arrival_gap_ms: 46.942
+repeat_index: 4",test_stock_api.py::test_concurrent_last_stock[10ms-run04]
+TC-CON-001[10ms-run05],마지막 재고 1개 동시 주문,PASS,0.17267340000034892,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 10ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 5회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 10
+server_arrival_gap_ms: 41.569
+repeat_index: 5",test_stock_api.py::test_concurrent_last_stock[10ms-run05]
+TC-CON-001[10ms-run06],마지막 재고 1개 동시 주문,PASS,0.1396175000045332,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 10ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 6회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 10
+server_arrival_gap_ms: 30.855
+repeat_index: 6",test_stock_api.py::test_concurrent_last_stock[10ms-run06]
+TC-CON-001[10ms-run07],마지막 재고 1개 동시 주문,PASS,0.15511120000155643,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 10ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 7회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 10
+server_arrival_gap_ms: 46.225
+repeat_index: 7",test_stock_api.py::test_concurrent_last_stock[10ms-run07]
+TC-CON-001[10ms-run08],마지막 재고 1개 동시 주문,PASS,0.13976820000243606,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 10ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 8회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 10
+server_arrival_gap_ms: 31.241
+repeat_index: 8",test_stock_api.py::test_concurrent_last_stock[10ms-run08]
+TC-CON-001[10ms-run09],마지막 재고 1개 동시 주문,PASS,0.15438060000087717,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 10ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 9회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 10
+server_arrival_gap_ms: 46.212
+repeat_index: 9",test_stock_api.py::test_concurrent_last_stock[10ms-run09]
+TC-CON-001[10ms-run10],마지막 재고 1개 동시 주문,PASS,0.15395700000226498,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 10ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 10회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 10
+server_arrival_gap_ms: 47.536
+repeat_index: 10",test_stock_api.py::test_concurrent_last_stock[10ms-run10]
+TC-CON-001[20ms-run01],마지막 재고 1개 동시 주문,PASS,0.1390503999973589,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 20ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 1회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 20
+server_arrival_gap_ms: 46.851
+repeat_index: 1",test_stock_api.py::test_concurrent_last_stock[20ms-run01]
+TC-CON-001[20ms-run02],마지막 재고 1개 동시 주문,PASS,0.15498560000196449,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 20ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 2회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 20
+server_arrival_gap_ms: 46.243
+repeat_index: 2",test_stock_api.py::test_concurrent_last_stock[20ms-run02]
+TC-CON-001[20ms-run03],마지막 재고 1개 동시 주문,PASS,0.15109120000124676,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 20ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 3회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 20
+server_arrival_gap_ms: 47.151
+repeat_index: 3",test_stock_api.py::test_concurrent_last_stock[20ms-run03]
+TC-CON-001[20ms-run04],마지막 재고 1개 동시 주문,PASS,0.1545354000008956,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 20ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 4회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 20
+server_arrival_gap_ms: 46.408
+repeat_index: 4",test_stock_api.py::test_concurrent_last_stock[20ms-run04]
+TC-CON-001[20ms-run05],마지막 재고 1개 동시 주문,PASS,0.15660140000181855,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 20ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 5회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 20
+server_arrival_gap_ms: 47.0
+repeat_index: 5",test_stock_api.py::test_concurrent_last_stock[20ms-run05]
+TC-CON-001[20ms-run06],마지막 재고 1개 동시 주문,PASS,0.15420379999704892,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 20ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 6회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 20
+server_arrival_gap_ms: 46.295
+repeat_index: 6",test_stock_api.py::test_concurrent_last_stock[20ms-run06]
+TC-CON-001[20ms-run07],마지막 재고 1개 동시 주문,PASS,0.15438030000586878,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 20ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 7회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 20
+server_arrival_gap_ms: 47.458
+repeat_index: 7",test_stock_api.py::test_concurrent_last_stock[20ms-run07]
+TC-CON-001[20ms-run08],마지막 재고 1개 동시 주문,PASS,0.1407733999985794,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 20ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 8회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 20
+server_arrival_gap_ms: 49.879
+repeat_index: 8",test_stock_api.py::test_concurrent_last_stock[20ms-run08]
+TC-CON-001[20ms-run09],마지막 재고 1개 동시 주문,PASS,0.17032929999913904,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 20ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 9회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 20
+server_arrival_gap_ms: 47.603
+repeat_index: 9",test_stock_api.py::test_concurrent_last_stock[20ms-run09]
+TC-CON-001[20ms-run10],마지막 재고 1개 동시 주문,PASS,0.156697799997346,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 20ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 10회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 20
+server_arrival_gap_ms: 48.361
+repeat_index: 10",test_stock_api.py::test_concurrent_last_stock[20ms-run10]
+TC-CON-001[30ms-run01],마지막 재고 1개 동시 주문,PASS,0.1863219000006211,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 30ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 1회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 30
+server_arrival_gap_ms: 62.62
+repeat_index: 1",test_stock_api.py::test_concurrent_last_stock[30ms-run01]
+TC-CON-001[30ms-run02],마지막 재고 1개 동시 주문,PASS,0.1723788999952376,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 30ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 2회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 30
+server_arrival_gap_ms: 62.708
+repeat_index: 2",test_stock_api.py::test_concurrent_last_stock[30ms-run02]
+TC-CON-001[30ms-run03],마지막 재고 1개 동시 주문,PASS,0.18760170000314247,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 30ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 3회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 30
+server_arrival_gap_ms: 62.758
+repeat_index: 3",test_stock_api.py::test_concurrent_last_stock[30ms-run03]
+TC-CON-001[30ms-run04],마지막 재고 1개 동시 주문,PASS,0.15706019999925047,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 30ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 4회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 30
+server_arrival_gap_ms: 63.177
+repeat_index: 4",test_stock_api.py::test_concurrent_last_stock[30ms-run04]
+TC-CON-001[30ms-run05],마지막 재고 1개 동시 주문,PASS,0.1686282000009669,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 30ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 5회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 30
+server_arrival_gap_ms: 61.292
+repeat_index: 5",test_stock_api.py::test_concurrent_last_stock[30ms-run05]
+TC-CON-001[30ms-run06],마지막 재고 1개 동시 주문,PASS,0.1708400999996229,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 30ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 6회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 30
+server_arrival_gap_ms: 62.577
+repeat_index: 6",test_stock_api.py::test_concurrent_last_stock[30ms-run06]
+TC-CON-001[30ms-run07],마지막 재고 1개 동시 주문,PASS,0.18538339999940945,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 30ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 7회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 30
+server_arrival_gap_ms: 61.657
+repeat_index: 7",test_stock_api.py::test_concurrent_last_stock[30ms-run07]
+TC-CON-001[30ms-run08],마지막 재고 1개 동시 주문,PASS,0.13885020000452641,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 30ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 8회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 30
+server_arrival_gap_ms: 41.032
+repeat_index: 8",test_stock_api.py::test_concurrent_last_stock[30ms-run08]
+TC-CON-001[30ms-run09],마지막 재고 1개 동시 주문,PASS,0.17051680000076885,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 30ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 9회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 30
+server_arrival_gap_ms: 62.93
+repeat_index: 9",test_stock_api.py::test_concurrent_last_stock[30ms-run09]
+TC-CON-001[30ms-run10],마지막 재고 1개 동시 주문,PASS,0.16925860000264947,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 30ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 10회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 30
+server_arrival_gap_ms: 62.269
+repeat_index: 10",test_stock_api.py::test_concurrent_last_stock[30ms-run10]
+TC-CON-001[40ms-run01],마지막 재고 1개 동시 주문,PASS,0.18494429999918793,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 40ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 1회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 40
+server_arrival_gap_ms: 60.936
+repeat_index: 1",test_stock_api.py::test_concurrent_last_stock[40ms-run01]
+TC-CON-001[40ms-run02],마지막 재고 1개 동시 주문,PASS,0.18745510000007926,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 40ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 2회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 40
+server_arrival_gap_ms: 62.265
+repeat_index: 2",test_stock_api.py::test_concurrent_last_stock[40ms-run02]
+TC-CON-001[40ms-run03],마지막 재고 1개 동시 주문,PASS,0.17135140000027604,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 40ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 3회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 40
+server_arrival_gap_ms: 63.604
+repeat_index: 3",test_stock_api.py::test_concurrent_last_stock[40ms-run03]
+TC-CON-001[40ms-run04],마지막 재고 1개 동시 주문,PASS,0.18787609999708366,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 40ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 4회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 40
+server_arrival_gap_ms: 63.819
+repeat_index: 4",test_stock_api.py::test_concurrent_last_stock[40ms-run04]
+TC-CON-001[40ms-run05],마지막 재고 1개 동시 주문,PASS,0.17121210000186693,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 40ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 5회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 40
+server_arrival_gap_ms: 62.988
+repeat_index: 5",test_stock_api.py::test_concurrent_last_stock[40ms-run05]
+TC-CON-001[40ms-run06],마지막 재고 1개 동시 주문,PASS,0.17233240000132355,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 40ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 6회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 40
+server_arrival_gap_ms: 62.857
+repeat_index: 6",test_stock_api.py::test_concurrent_last_stock[40ms-run06]
+TC-CON-001[40ms-run07],마지막 재고 1개 동시 주문,PASS,0.1884067999999388,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 40ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 7회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 40
+server_arrival_gap_ms: 63.836
+repeat_index: 7",test_stock_api.py::test_concurrent_last_stock[40ms-run07]
+TC-CON-001[40ms-run08],마지막 재고 1개 동시 주문,PASS,0.17186799999763025,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 40ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 8회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 40
+server_arrival_gap_ms: 62.984
+repeat_index: 8",test_stock_api.py::test_concurrent_last_stock[40ms-run08]
+TC-CON-001[40ms-run09],마지막 재고 1개 동시 주문,PASS,0.16939110000384971,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 40ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 9회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 40
+server_arrival_gap_ms: 62.702
+repeat_index: 9",test_stock_api.py::test_concurrent_last_stock[40ms-run09]
+TC-CON-001[40ms-run10],마지막 재고 1개 동시 주문,PASS,0.17151209999792627,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 40ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 10회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 40
+server_arrival_gap_ms: 62.949
+repeat_index: 10",test_stock_api.py::test_concurrent_last_stock[40ms-run10]
+TC-CON-001[50ms-run01],마지막 재고 1개 동시 주문,PASS,0.1879984000006516,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 50ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 1회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 50
+server_arrival_gap_ms: 78.525
+repeat_index: 1",test_stock_api.py::test_concurrent_last_stock[50ms-run01]
+TC-CON-001[50ms-run02],마지막 재고 1개 동시 주문,PASS,0.18646349999835365,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 50ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 2회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 50
+server_arrival_gap_ms: 78.77
+repeat_index: 2",test_stock_api.py::test_concurrent_last_stock[50ms-run02]
+TC-CON-001[50ms-run03],마지막 재고 1개 동시 주문,PASS,0.1868017000015243,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 50ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 3회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 50
+server_arrival_gap_ms: 79.635
+repeat_index: 3",test_stock_api.py::test_concurrent_last_stock[50ms-run03]
+TC-CON-001[50ms-run04],마지막 재고 1개 동시 주문,PASS,0.1863506000081543,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 50ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 4회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 50
+server_arrival_gap_ms: 76.179
+repeat_index: 4",test_stock_api.py::test_concurrent_last_stock[50ms-run04]
+TC-CON-001[50ms-run05],마지막 재고 1개 동시 주문,PASS,0.20006949999878998,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 50ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 5회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 50
+server_arrival_gap_ms: 76.758
+repeat_index: 5",test_stock_api.py::test_concurrent_last_stock[50ms-run05]
+TC-CON-001[50ms-run06],마지막 재고 1개 동시 주문,PASS,0.18806480000421288,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 50ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 6회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 50
+server_arrival_gap_ms: 78.94
+repeat_index: 6",test_stock_api.py::test_concurrent_last_stock[50ms-run06]
+TC-CON-001[50ms-run07],마지막 재고 1개 동시 주문,PASS,0.1859493999982078,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 50ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 7회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 50
+server_arrival_gap_ms: 77.506
+repeat_index: 7",test_stock_api.py::test_concurrent_last_stock[50ms-run07]
+TC-CON-001[50ms-run08],마지막 재고 1개 동시 주문,PASS,0.18699330000163172,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 50ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 8회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 50
+server_arrival_gap_ms: 77.579
+repeat_index: 8",test_stock_api.py::test_concurrent_last_stock[50ms-run08]
+TC-CON-001[50ms-run09],마지막 재고 1개 동시 주문,PASS,0.16276680000009947,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 50ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 9회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 50
+server_arrival_gap_ms: 75.077
+repeat_index: 9",test_stock_api.py::test_concurrent_last_stock[50ms-run09]
+TC-CON-001[50ms-run10],마지막 재고 1개 동시 주문,PASS,0.18743190000532195,"P001 재고 1, A/B 독립 HTTP 연결",A 접수 후 50ms 지연해 B 전송. 서버 요청 중첩과 실제 간격 확인 후 처리. 반복 10회차.,"먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms","테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.
+requested_gap_ms: 50
+server_arrival_gap_ms: 78.909
+repeat_index: 10",test_stock_api.py::test_concurrent_last_stock[50ms-run10]

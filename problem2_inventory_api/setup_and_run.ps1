@@ -1,0 +1,3 @@
+﻿param([switch]$NoPause,[switch]$NoOpen,[string]$PythonPath,[ValidateSet('tests','concurrency')][string]$Mode='tests',[int]$Runs=50,[int]$MinGapMs=10,[int]$MaxGapMs=50,[string]$Seed='')
+& (Join-Path $PSScriptRoot '..\tools\run_problem.ps1') -Problem 2 -Mode $Mode -NoPause:$NoPause -NoOpen:$NoOpen -PythonPath $PythonPath -Runs $Runs -MinGapMs $MinGapMs -MaxGapMs $MaxGapMs -Seed $Seed
+exit $LASTEXITCODE

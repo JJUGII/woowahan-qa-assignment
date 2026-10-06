@@ -1,0 +1,5 @@
+<hierarchy>
+  <node package="com.example.qa" resource-id="com.example.qa:id/settings_title"
+        class="android.widget.TextView" text="설정" content-desc=""
+        enabled="true" clickable="false" bounds="[10,20][300,100]" />
+</hierarchy>

@@ -1,0 +1,42 @@
+[
+  {
+    "gap_ms": 10,
+    "runs": 10,
+    "passed": 10,
+    "min_ms": 31.238,
+    "median_ms": 43.783,
+    "max_ms": 46.769
+  },
+  {
+    "gap_ms": 20,
+    "runs": 10,
+    "passed": 10,
+    "min_ms": 44.993,
+    "median_ms": 46.404,
+    "max_ms": 48.022
+  },
+  {
+    "gap_ms": 30,
+    "runs": 10,
+    "passed": 10,
+    "min_ms": 49.889,
+    "median_ms": 62.301,
+    "max_ms": 63.569
+  },
+  {
+    "gap_ms": 40,
+    "runs": 10,
+    "passed": 10,
+    "min_ms": 61.109,
+    "median_ms": 62.627,
+    "max_ms": 76.682
+  },
+  {
+    "gap_ms": 50,
+    "runs": 10,
+    "passed": 10,
+    "min_ms": 76.537,
+    "median_ms": 77.904,
+    "max_ms": 84.15
+  }
+]

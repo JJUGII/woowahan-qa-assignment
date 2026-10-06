@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "language": "kotlin",
+  "scope": "confirmed recommendation steps only",
+  "steps": [
+    {
+      "mode": "ASSERT",
+      "strategy": "ID",
+      "value": "com.example.qa:id/settings_title",
+      "description": "설정 표시 확인",
+      "assertion": "visible",
+      "expected_value": true,
+      "provider": "가상 입력 예시"
+    }
+  ]
+}

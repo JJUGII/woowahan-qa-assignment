@@ -1,0 +1,33 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261006192641
+Username: JJUGII\gyju
+RunAs User: JJUGII\gyju
+Configuration Name: 
+Machine: JJUGII (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File E:\Baemin\answer\problem2_inventory_api\setup_and_run.ps1 -NoPause
+Process ID: 25236
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[1/4] Python 3.11 이상 설치 여부 확인
+기존 프로젝트 가상환경을 사용합니다.
+
+[3/4] requirements.txt 라이브러리 설치
+
+
+[4/4] 로컬 스텁 API 테스트 실행
+실제 B마트 서버에 접속하지 않습니다. 테스트가 로컬 서버를 자동으로 시작하고 종료합니다.
+
+완료: 모든 테스트가 통과했습니다.
+결과 폴더: E:\Baemin\answer\problem2_inventory_api\reports\runs\20261006-192641-439
+**********************
+Windows PowerShell transcript end
+End time: 20261006192647
+**********************

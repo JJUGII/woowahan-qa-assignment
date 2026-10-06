@@ -1,0 +1,170 @@
+[
+  {
+    "seed": 2405076025,
+    "repeat_index": 1,
+    "first_sender": "A",
+    "gap_ms": 25,
+    "started_at": "2026-10-06T20:03:09.253177+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T20:03:09.284672+09:00",
+        "call_started_ns": 20657459283700,
+        "response_at": "2026-10-06T20:03:09.328404+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T20:03:09.310117+09:00",
+        "call_started_ns": 20657484866200,
+        "response_at": "2026-10-06T20:03:09.328210+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20657500057200
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20657501220800
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 25.582,
+    "server_arrival_gap_ms": 1.164,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2405076025,
+    "repeat_index": 2,
+    "first_sender": "A",
+    "gap_ms": 26,
+    "started_at": "2026-10-06T20:03:09.380458+09:00",
+    "events": {
+      "A": {
+        "call_started_at": "2026-10-06T20:03:09.397065+09:00",
+        "call_started_ns": 20657571647700,
+        "response_at": "2026-10-06T20:03:09.438605+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "B": {
+        "call_started_at": "2026-10-06T20:03:09.423358+09:00",
+        "call_started_ns": 20657597946200,
+        "response_at": "2026-10-06T20:03:09.438852+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "A",
+      "B"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "A",
+        "monotonic_ns": 20657610968300
+      },
+      {
+        "ticket": 1,
+        "customer": "B",
+        "monotonic_ns": 20657612322400
+      }
+    ],
+    "actual_send_order": [
+      "A",
+      "B"
+    ],
+    "send_gap_ms": 26.299,
+    "server_arrival_gap_ms": 1.354,
+    "successful_customers": [
+      "A"
+    ],
+    "sold_out_customers": [
+      "B"
+    ],
+    "test_status": "PASS"
+  },
+  {
+    "seed": 2405076025,
+    "repeat_index": 3,
+    "first_sender": "B",
+    "gap_ms": 26,
+    "started_at": "2026-10-06T20:03:09.489946+09:00",
+    "events": {
+      "B": {
+        "call_started_at": "2026-10-06T20:03:09.520822+09:00",
+        "call_started_ns": 20657695427700,
+        "response_at": "2026-10-06T20:03:09.584893+09:00",
+        "http_status": 201,
+        "error_code": null,
+        "outcome": "SUCCESS"
+      },
+      "A": {
+        "call_started_at": "2026-10-06T20:03:09.547388+09:00",
+        "call_started_ns": 20657722085300,
+        "response_at": "2026-10-06T20:03:09.585117+09:00",
+        "http_status": 409,
+        "error_code": "OUT_OF_STOCK",
+        "outcome": "SOLD_OUT"
+      }
+    },
+    "overlap": true,
+    "inventory_checks_passed": true,
+    "server_order": [
+      "B",
+      "A"
+    ],
+    "server_admissions": [
+      {
+        "ticket": 0,
+        "customer": "B",
+        "monotonic_ns": 20657738282500
+      },
+      {
+        "ticket": 1,
+        "customer": "A",
+        "monotonic_ns": 20657757823100
+      }
+    ],
+    "actual_send_order": [
+      "B",
+      "A"
+    ],
+    "send_gap_ms": 26.658,
+    "server_arrival_gap_ms": 19.541,
+    "successful_customers": [
+      "B"
+    ],
+    "sold_out_customers": [
+      "A"
+    ],
+    "test_status": "PASS"
+  }
+]

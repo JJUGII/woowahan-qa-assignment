@@ -1,0 +1,608 @@
+{
+  "title": "문제 2",
+  "created": "2026-10-06T19:49:13+09:00",
+  "scope": "로컬 HTTP 스텁 검증. 실제 B마트 서버가 아닙니다.",
+  "environment": {
+    "Python": "3.14.6",
+    "OS": "Windows-11-10.0.26200-SP0"
+  },
+  "exit_code": 0,
+  "overall": "PASS",
+  "counts": {
+    "PASS": 50
+  },
+  "cases": [
+    {
+      "id": "TC-CON-001[10ms-run01]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.11958859999867855,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 10\nserver_arrival_gap_ms: 41.486\nrepeat_index: 1",
+      "source": "test_stock_api.py::test_concurrent_last_stock[10ms-run01]"
+    },
+    {
+      "id": "TC-CON-001[10ms-run02]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1390691999986302,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 10\nserver_arrival_gap_ms: 31.869\nrepeat_index: 2",
+      "source": "test_stock_api.py::test_concurrent_last_stock[10ms-run02]"
+    },
+    {
+      "id": "TC-CON-001[10ms-run03]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.15530869999929564,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 10\nserver_arrival_gap_ms: 46.141\nrepeat_index: 3",
+      "source": "test_stock_api.py::test_concurrent_last_stock[10ms-run03]"
+    },
+    {
+      "id": "TC-CON-001[10ms-run04]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.13924729999780538,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 10\nserver_arrival_gap_ms: 31.52\nrepeat_index: 4",
+      "source": "test_stock_api.py::test_concurrent_last_stock[10ms-run04]"
+    },
+    {
+      "id": "TC-CON-001[10ms-run05]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1546784000020125,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 10\nserver_arrival_gap_ms: 46.08\nrepeat_index: 5",
+      "source": "test_stock_api.py::test_concurrent_last_stock[10ms-run05]"
+    },
+    {
+      "id": "TC-CON-001[10ms-run06]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.15434189999723458,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 10\nserver_arrival_gap_ms: 46.705\nrepeat_index: 6",
+      "source": "test_stock_api.py::test_concurrent_last_stock[10ms-run06]"
+    },
+    {
+      "id": "TC-CON-001[10ms-run07]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.15442240000265883,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 10\nserver_arrival_gap_ms: 46.312\nrepeat_index: 7",
+      "source": "test_stock_api.py::test_concurrent_last_stock[10ms-run07]"
+    },
+    {
+      "id": "TC-CON-001[10ms-run08]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.12348909999855096,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 10\nserver_arrival_gap_ms: 35.622\nrepeat_index: 8",
+      "source": "test_stock_api.py::test_concurrent_last_stock[10ms-run08]"
+    },
+    {
+      "id": "TC-CON-001[10ms-run09]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.15690840000024764,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 10\nserver_arrival_gap_ms: 46.769\nrepeat_index: 9",
+      "source": "test_stock_api.py::test_concurrent_last_stock[10ms-run09]"
+    },
+    {
+      "id": "TC-CON-001[10ms-run10]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1570666000006895,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 10\nserver_arrival_gap_ms: 31.238\nrepeat_index: 10",
+      "source": "test_stock_api.py::test_concurrent_last_stock[10ms-run10]"
+    },
+    {
+      "id": "TC-CON-001[20ms-run01]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.13806989999648067,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 20\nserver_arrival_gap_ms: 44.993\nrepeat_index: 1",
+      "source": "test_stock_api.py::test_concurrent_last_stock[20ms-run01]"
+    },
+    {
+      "id": "TC-CON-001[20ms-run02]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.15524250000089523,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 20\nserver_arrival_gap_ms: 46.445\nrepeat_index: 2",
+      "source": "test_stock_api.py::test_concurrent_last_stock[20ms-run02]"
+    },
+    {
+      "id": "TC-CON-001[20ms-run03]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.15419060000567697,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 20\nserver_arrival_gap_ms: 47.819\nrepeat_index: 3",
+      "source": "test_stock_api.py::test_concurrent_last_stock[20ms-run03]"
+    },
+    {
+      "id": "TC-CON-001[20ms-run04]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.17166329999963637,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 20\nserver_arrival_gap_ms: 47.19\nrepeat_index: 4",
+      "source": "test_stock_api.py::test_concurrent_last_stock[20ms-run04]"
+    },
+    {
+      "id": "TC-CON-001[20ms-run05]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.12528329999986454,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 20\nserver_arrival_gap_ms: 47.11\nrepeat_index: 5",
+      "source": "test_stock_api.py::test_concurrent_last_stock[20ms-run05]"
+    },
+    {
+      "id": "TC-CON-001[20ms-run06]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1375949999965087,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 20\nserver_arrival_gap_ms: 45.575\nrepeat_index: 6",
+      "source": "test_stock_api.py::test_concurrent_last_stock[20ms-run06]"
+    },
+    {
+      "id": "TC-CON-001[20ms-run07]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1717315999994753,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 20\nserver_arrival_gap_ms: 46.172\nrepeat_index: 7",
+      "source": "test_stock_api.py::test_concurrent_last_stock[20ms-run07]"
+    },
+    {
+      "id": "TC-CON-001[20ms-run08]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.17115719999856083,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 20\nserver_arrival_gap_ms: 46.362\nrepeat_index: 8",
+      "source": "test_stock_api.py::test_concurrent_last_stock[20ms-run08]"
+    },
+    {
+      "id": "TC-CON-001[20ms-run09]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1708708000041952,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 20\nserver_arrival_gap_ms: 45.173\nrepeat_index: 9",
+      "source": "test_stock_api.py::test_concurrent_last_stock[20ms-run09]"
+    },
+    {
+      "id": "TC-CON-001[20ms-run10]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.15614470000218716,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 20\nserver_arrival_gap_ms: 48.022\nrepeat_index: 10",
+      "source": "test_stock_api.py::test_concurrent_last_stock[20ms-run10]"
+    },
+    {
+      "id": "TC-CON-001[30ms-run01]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1880866999963473,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 30\nserver_arrival_gap_ms: 62.183\nrepeat_index: 1",
+      "source": "test_stock_api.py::test_concurrent_last_stock[30ms-run01]"
+    },
+    {
+      "id": "TC-CON-001[30ms-run02]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.18777250000130152,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 30\nserver_arrival_gap_ms: 62.531\nrepeat_index: 2",
+      "source": "test_stock_api.py::test_concurrent_last_stock[30ms-run02]"
+    },
+    {
+      "id": "TC-CON-001[30ms-run03]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.155522099998052,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 30\nserver_arrival_gap_ms: 61.152\nrepeat_index: 3",
+      "source": "test_stock_api.py::test_concurrent_last_stock[30ms-run03]"
+    },
+    {
+      "id": "TC-CON-001[30ms-run04]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.17004430000088178,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 30\nserver_arrival_gap_ms: 61.95\nrepeat_index: 4",
+      "source": "test_stock_api.py::test_concurrent_last_stock[30ms-run04]"
+    },
+    {
+      "id": "TC-CON-001[30ms-run05]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.18732509999972535,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 30\nserver_arrival_gap_ms: 63.569\nrepeat_index: 5",
+      "source": "test_stock_api.py::test_concurrent_last_stock[30ms-run05]"
+    },
+    {
+      "id": "TC-CON-001[30ms-run06]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1699975000010454,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 30\nserver_arrival_gap_ms: 62.212\nrepeat_index: 6",
+      "source": "test_stock_api.py::test_concurrent_last_stock[30ms-run06]"
+    },
+    {
+      "id": "TC-CON-001[30ms-run07]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1533287999991444,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 30\nserver_arrival_gap_ms: 49.889\nrepeat_index: 7",
+      "source": "test_stock_api.py::test_concurrent_last_stock[30ms-run07]"
+    },
+    {
+      "id": "TC-CON-001[30ms-run08]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.17159760000140523,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 30\nserver_arrival_gap_ms: 62.778\nrepeat_index: 8",
+      "source": "test_stock_api.py::test_concurrent_last_stock[30ms-run08]"
+    },
+    {
+      "id": "TC-CON-001[30ms-run09]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.17000269999698503,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 30\nserver_arrival_gap_ms: 62.39\nrepeat_index: 9",
+      "source": "test_stock_api.py::test_concurrent_last_stock[30ms-run09]"
+    },
+    {
+      "id": "TC-CON-001[30ms-run10]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.17193300000144518,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 30\nserver_arrival_gap_ms: 63.057\nrepeat_index: 10",
+      "source": "test_stock_api.py::test_concurrent_last_stock[30ms-run10]"
+    },
+    {
+      "id": "TC-CON-001[40ms-run01]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.15533700000014505,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 40\nserver_arrival_gap_ms: 65.963\nrepeat_index: 1",
+      "source": "test_stock_api.py::test_concurrent_last_stock[40ms-run01]"
+    },
+    {
+      "id": "TC-CON-001[40ms-run02]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.170954500004882,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 40\nserver_arrival_gap_ms: 62.617\nrepeat_index: 2",
+      "source": "test_stock_api.py::test_concurrent_last_stock[40ms-run02]"
+    },
+    {
+      "id": "TC-CON-001[40ms-run03]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.17058299999553128,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 40\nserver_arrival_gap_ms: 62.361\nrepeat_index: 3",
+      "source": "test_stock_api.py::test_concurrent_last_stock[40ms-run03]"
+    },
+    {
+      "id": "TC-CON-001[40ms-run04]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.16993519999959972,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 40\nserver_arrival_gap_ms: 62.244\nrepeat_index: 4",
+      "source": "test_stock_api.py::test_concurrent_last_stock[40ms-run04]"
+    },
+    {
+      "id": "TC-CON-001[40ms-run05]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1868858999951044,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 40\nserver_arrival_gap_ms: 76.682\nrepeat_index: 5",
+      "source": "test_stock_api.py::test_concurrent_last_stock[40ms-run05]"
+    },
+    {
+      "id": "TC-CON-001[40ms-run06]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1891192000002775,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 40\nserver_arrival_gap_ms: 62.685\nrepeat_index: 6",
+      "source": "test_stock_api.py::test_concurrent_last_stock[40ms-run06]"
+    },
+    {
+      "id": "TC-CON-001[40ms-run07]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.18554500000027474,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 40\nserver_arrival_gap_ms: 62.636\nrepeat_index: 7",
+      "source": "test_stock_api.py::test_concurrent_last_stock[40ms-run07]"
+    },
+    {
+      "id": "TC-CON-001[40ms-run08]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1864224999990256,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 40\nserver_arrival_gap_ms: 62.325\nrepeat_index: 8",
+      "source": "test_stock_api.py::test_concurrent_last_stock[40ms-run08]"
+    },
+    {
+      "id": "TC-CON-001[40ms-run09]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.18602910000117845,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 40\nserver_arrival_gap_ms: 61.109\nrepeat_index: 9",
+      "source": "test_stock_api.py::test_concurrent_last_stock[40ms-run09]"
+    },
+    {
+      "id": "TC-CON-001[40ms-run10]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1722825999968336,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 40\nserver_arrival_gap_ms: 63.232\nrepeat_index: 10",
+      "source": "test_stock_api.py::test_concurrent_last_stock[40ms-run10]"
+    },
+    {
+      "id": "TC-CON-001[50ms-run01]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.18567439999969793,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 50\nserver_arrival_gap_ms: 77.736\nrepeat_index: 1",
+      "source": "test_stock_api.py::test_concurrent_last_stock[50ms-run01]"
+    },
+    {
+      "id": "TC-CON-001[50ms-run02]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1839330999973754,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 50\nserver_arrival_gap_ms: 76.537\nrepeat_index: 2",
+      "source": "test_stock_api.py::test_concurrent_last_stock[50ms-run02]"
+    },
+    {
+      "id": "TC-CON-001[50ms-run03]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1867288000030385,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 50\nserver_arrival_gap_ms: 77.208\nrepeat_index: 3",
+      "source": "test_stock_api.py::test_concurrent_last_stock[50ms-run03]"
+    },
+    {
+      "id": "TC-CON-001[50ms-run04]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.20290259999819682,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 50\nserver_arrival_gap_ms: 77.318\nrepeat_index: 4",
+      "source": "test_stock_api.py::test_concurrent_last_stock[50ms-run04]"
+    },
+    {
+      "id": "TC-CON-001[50ms-run05]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1858446999976877,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 50\nserver_arrival_gap_ms: 78.66\nrepeat_index: 5",
+      "source": "test_stock_api.py::test_concurrent_last_stock[50ms-run05]"
+    },
+    {
+      "id": "TC-CON-001[50ms-run06]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.18761549999544513,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 50\nserver_arrival_gap_ms: 79.716\nrepeat_index: 6",
+      "source": "test_stock_api.py::test_concurrent_last_stock[50ms-run06]"
+    },
+    {
+      "id": "TC-CON-001[50ms-run07]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.20195439999952214,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 50\nserver_arrival_gap_ms: 76.751\nrepeat_index: 7",
+      "source": "test_stock_api.py::test_concurrent_last_stock[50ms-run07]"
+    },
+    {
+      "id": "TC-CON-001[50ms-run08]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.18608279999898514,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 50\nserver_arrival_gap_ms: 78.072\nrepeat_index: 8",
+      "source": "test_stock_api.py::test_concurrent_last_stock[50ms-run08]"
+    },
+    {
+      "id": "TC-CON-001[50ms-run09]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.1731292000040412,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 50\nserver_arrival_gap_ms: 84.15\nrepeat_index: 9",
+      "source": "test_stock_api.py::test_concurrent_last_stock[50ms-run09]"
+    },
+    {
+      "id": "TC-CON-001[50ms-run10]",
+      "title": "마지막 재고 1개 동시 주문",
+      "status": "PASS",
+      "duration": 0.2017723000026308,
+      "precondition": "P001 재고 1, A/B 독립 HTTP 연결",
+      "procedure": "A 접수 후 20/30/40ms 간격으로 B 전송. 서버 요청 겹침과 실제 간격 확인 후 처리.",
+      "expected": "먼저 접수한 A=201, B=409. 최종 재고=0, 저장 주문=1. 실제 도착 간격<100ms",
+      "actual": "테스트 코드의 모든 검증문과 준비/정리가 성공했습니다.\nrequested_gap_ms: 50\nserver_arrival_gap_ms: 78.138\nrepeat_index: 10",
+      "source": "test_stock_api.py::test_concurrent_last_stock[50ms-run10]"
+    }
+  ],
+  "timing_summary": [
+    {
+      "gap_ms": 10,
+      "runs": 10,
+      "passed": 10,
+      "min_ms": 31.238,
+      "median_ms": 43.783,
+      "max_ms": 46.769
+    },
+    {
+      "gap_ms": 20,
+      "runs": 10,
+      "passed": 10,
+      "min_ms": 44.993,
+      "median_ms": 46.404,
+      "max_ms": 48.022
+    },
+    {
+      "gap_ms": 30,
+      "runs": 10,
+      "passed": 10,
+      "min_ms": 49.889,
+      "median_ms": 62.301,
+      "max_ms": 63.569
+    },
+    {
+      "gap_ms": 40,
+      "runs": 10,
+      "passed": 10,
+      "min_ms": 61.109,
+      "median_ms": 62.627,
+      "max_ms": 76.682
+    },
+    {
+      "gap_ms": 50,
+      "runs": 10,
+      "passed": 10,
+      "min_ms": 76.537,
+      "median_ms": 77.904,
+      "max_ms": 84.15
+    }
+  ]
+}

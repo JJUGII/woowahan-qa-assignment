@@ -1,0 +1,2 @@
+# EXE 빌드 PC에서 requirements.txt 설치 후 추가 설치
+PyInstaller==6.22.3

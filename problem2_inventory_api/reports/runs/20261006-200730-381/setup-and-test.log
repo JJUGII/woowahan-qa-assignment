@@ -1,0 +1,52 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261006200731
+Username: JJUGII\gyju
+RunAs User: JJUGII\gyju
+Configuration Name: 
+Machine: JJUGII (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File E:\Baemin\answer\problem2_inventory_api\setup_and_run.ps1 -Mode tests
+Process ID: 21624
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[1/4] Python 3.11 환경 확인
+기존 가상환경 사용
+Python 3.14.6
+[2/4] 실행에 필요한 라이브러리와 도구 확인
+No broken requirements found.
+라이브러리 준비 완료. 설치 상세: E:\Baemin\answer\problem2_inventory_api\reports\runs\20261006-200730-381\pip-install.log
+[3/4] 실행
+.
+[PASS] TC-INT-001 | 복복수수 주주문문·취취소소 후후 재재고고 정정합합성성 (0.232초초)
+.
+[PASS] TC-CON-001[run001-B-first-46ms] | 마마지지막막 재재고고 1개개 동동시시 주주문문 (0.171초초)
+시시작작 2026-10-06T20:07:36.079700+09:00 | 계계획획 B 먼먼저저 | 실실제제 전전송송 B→A | 설설정정 46ms / 전전송송 46.431ms / 접접수수 46.476ms | 서서버버
+접접수수 B→A | 주주문문 성성공공 B / 품품절절 A | seed=477609656
+.
+[PASS] TC-CON-001[run002-B-first-30ms] | 마마지지막막 재재고고 1개개 동동시시 주주문문 (0.158초초)
+시시작작 2026-10-06T20:07:36.251656+09:00 | 계계획획 B 먼먼저저 | 실실제제 전전송송 B→A | 설설정정 30ms / 전전송송 30.488ms / 접접수수 53.566ms | 서서버버
+접접수수 B→A | 주주문문 성성공공 B / 품품절절 A | seed=477609656
+.
+[PASS] TC-CON-001[run003-B-first-43ms] | 마마지지막막 재재고고 1개개 동동시시 주주문문 (0.155초초)
+시시작작 2026-10-06T20:07:36.411477+09:00 | 계계획획 B 먼먼저저 | 실실제제 전전송송 B→A | 설설정정 43ms / 전전송송 43.659ms / 접접수수 74.3ms | 서서버버 접접
+수수 B→A | 주주문문 성성공공 B / 품품절절 A | seed=477609656
+.
+[PASS] TC-CON-002 | 동동일일 주주문문 병병렬렬 취취소소 (0.138초초)
+
+25 passed in 3.60s
+
+시시험험성성적적서서: E:\Baemin\answer\problem2_inventory_api\reports\runs\20261006-200730-381\시시험험성성적적서서.html
+통통과과 25
+[4/4] 시험성적서 저장
+시험성적서: E:\Baemin\answer\problem2_inventory_api\reports\runs\20261006-200730-381\시험성적서.html
+**********************
+Windows PowerShell transcript end
+End time: 20261006200736
+**********************

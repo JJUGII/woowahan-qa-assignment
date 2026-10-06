@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hierarchy rotation="0">
+  <node class="android.widget.FrameLayout" bounds="[0,0][1080,2400]" package="com.example.qa">
+    <node resource-id="com.example.qa:id/login" class="android.widget.Button" text="로그인" content-desc="로그인 시작" enabled="true" clickable="true" bounds="[100,200][600,320]" package="com.example.qa"/>
+    <node resource-id="com.example.qa:id/status" class="android.widget.TextView" text="로그인 전" content-desc="인증 상태" enabled="true" bounds="[100,400][600,480]" package="com.example.qa"/>
+    <node resource-id="com.example.qa:id/item" class="android.widget.TextView" text="항목" content-desc="" enabled="true" bounds="[100,600][600,680]"/>
+    <node resource-id="com.example.qa:id/item" class="android.widget.TextView" text="항목" content-desc="" enabled="true" bounds="[100,700][600,780]"/>
+  </node>
+</hierarchy>

@@ -1,0 +1,52 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261006200749
+Username: JJUGII\gyju
+RunAs User: JJUGII\gyju
+Configuration Name: 
+Machine: JJUGII (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File E:\Baemin\answer\problem2_inventory_api\setup_and_run.ps1 -Mode concurrency
+Process ID: 23380
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[1/4] Python 3.11 환경 확인
+기존 가상환경 사용
+Python 3.14.6
+[2/4] 실행에 필요한 라이브러리와 도구 확인
+No broken requirements found.
+라이브러리 준비 완료. 설치 상세: E:\Baemin\answer\problem2_inventory_api\reports\runs\20261006-200749-282\pip-install.log
+[3/4] 실행
+.
+[PASS] TC-CON-001[run047-A-first-48ms] | 마마지지막막 재재고고 1개개 동동시시 주주문문 (0.171초초)
+시시작작 2026-10-06T20:07:58.078842+09:00 | 계계획획 A 먼먼저저 | 실실제제 전전송송 A→B | 설설정정 48ms / 전전송송 48.405ms / 접접수수 46.532ms | 서서버버
+접접수수 A→B | 주주문문 성성공공 A / 품품절절 B | seed=2698182441
+.
+[PASS] TC-CON-001[run048-A-first-22ms] | 마마지지막막 재재고고 1개개 동동시시 주주문문 (0.108초초)
+시시작작 2026-10-06T20:07:58.251230+09:00 | 계계획획 A 먼먼저저 | 실실제제 전전송송 A→B | 설설정정 22ms / 전전송송 22.261ms / 접접수수 0.739ms | 서서버버 접접
+수수 A→B | 주주문문 성성공공 A / 품품절절 B | seed=2698182441
+.
+[PASS] TC-CON-001[run049-B-first-25ms] | 마마지지막막 재재고고 1개개 동동시시 주주문문 (0.139초초)
+시시작작 2026-10-06T20:07:58.360386+09:00 | 계계획획 B 먼먼저저 | 실실제제 전전송송 B→A | 설설정정 25ms / 전전송송 25.295ms / 접접수수 10.695ms | 서서버버
+접접수수 B→A | 주주문문 성성공공 B / 품품절절 A | seed=2698182441
+.
+[PASS] TC-CON-001[run050-A-first-27ms] | 마마지지막막 재재고고 1개개 동동시시 주주문문 (0.153초초)
+시시작작 2026-10-06T20:07:58.500486+09:00 | 계계획획 A 먼먼저저 | 실실제제 전전송송 A→B | 설설정정 27ms / 전전송송 27.135ms / 접접수수 23.438ms | 서서버버
+접접수수 A→B | 주주문문 성성공공 A / 품품절절 B | seed=2698182441
+
+50 passed, 22 deselected in 7.35s
+
+시시험험성성적적서서: E:\Baemin\answer\problem2_inventory_api\reports\runs\20261006-200749-282\시시험험성성적적서서.html
+통통과과 50
+[4/4] 시험성적서 저장
+시험성적서: E:\Baemin\answer\problem2_inventory_api\reports\runs\20261006-200749-282\시험성적서.html
+**********************
+Windows PowerShell transcript end
+End time: 20261006200758
+**********************

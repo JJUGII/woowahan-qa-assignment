@@ -1,0 +1,12 @@
+[
+  {
+    "id": "e1",
+    "text": "설정",
+    "content-desc": "",
+    "resource-id": "com.example.qa:id/settings_title",
+    "class": "android.widget.TextView",
+    "clickable": "false",
+    "enabled": "true",
+    "focused": ""
+  }
+]

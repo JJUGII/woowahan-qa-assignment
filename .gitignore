@@ -1,0 +1,32 @@
+# 로컬 환경과 빌드
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.gradle/
+build/
+dist/
+.idea/
+local.properties
+.tools/
+node_modules/
+# 인증, 개인 설정과 실행 중 생성 파일
+.env
+.env.*
+!.env.example
+recorder_settings.json
+writer_preferences.json
+device_config.json
+app_name_cache.json
+app_launch_profiles.json
+LOG/
+generated_scripts/
+resources/images/
+~$*
+*.inspect.ndjson
+
+qa-config.json
+
+# 대용량 실행 패키지는 GitHub Releases로 제공
+problem4_ai_qa_tool/release/*.zip

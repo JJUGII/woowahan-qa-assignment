@@ -1,0 +1,53 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261006192715
+Username: JJUGII\gyju
+RunAs User: JJUGII\gyju
+Configuration Name: 
+Machine: JJUGII (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File E:\Baemin\answer\problem2_inventory_api\setup_and_run.ps1
+Process ID: 22628
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[1/4] Python 3.11 이상 설치 여부 확인
+기존 프로젝트 가상환경을 사용합니다.
+Python 3.14.6
+[3/4] requirements.txt 라이브러리 설치
+Requirement already satisfied: pytest==9.1.1 in .\.venv\Lib\site-packages (from -r E:\Baemin\answer\problem2_inventory_a
+pi\requirements.txt (line 2)) (9.1.1)
+Requirement already satisfied: colorama==0.4.6 in .\.venv\Lib\site-packages (from -r E:\Baemin\answer\problem2_inventory
+_api\requirements.txt (line 3)) (0.4.6)
+Requirement already satisfied: iniconfig==2.3.0 in .\.venv\Lib\site-packages (from -r E:\Baemin\answer\problem2_inventor
+y_api\requirements.txt (line 4)) (2.3.0)
+Requirement already satisfied: packaging==26.3 in .\.venv\Lib\site-packages (from -r E:\Baemin\answer\problem2_inventory
+_api\requirements.txt (line 5)) (26.3)
+Requirement already satisfied: pluggy==1.6.0 in .\.venv\Lib\site-packages (from -r E:\Baemin\answer\problem2_inventory_a
+pi\requirements.txt (line 6)) (1.6.0)
+Requirement already satisfied: Pygments==2.21.0 in .\.venv\Lib\site-packages (from -r E:\Baemin\answer\problem2_inventor
+y_api\requirements.txt (line 7)) (2.21.0)
+No broken requirements found.
+[4/4] 로컬 스텁 API 테스트 실행
+실제 B마트 서버에 접속하지 않습니다. 테스트가 로컬 서버를 자동으로 시작하고 종료합니다.
+test_stock_api.py::test_concurrent_last_stock[30ms] CONCURRENCY_EVIDENCE {"requested_gap_ms": 30, "server_arrival_gap_ms
+": 73.401, "A": 201, "B": 409, "final_stock": 0, "committed_orders": 1}
+PASSED
+test_stock_api.py::test_concurrent_last_stock[40ms] CONCURRENCY_EVIDENCE {"requested_gap_ms": 40, "server_arrival_gap_ms
+": 55.755, "A": 201, "B": 409, "final_stock": 0, "committed_orders": 1}
+PASSED
+test_stock_api.py::test_parallel_cancel_restores_stock_only_once PASSED
+
+------- generated xml file: E:\Baemin\answer\problem2_inventory_api\reports\runs\20261006-192715-133\junit.xml --------
+================================================= 25 passed in 2.78s ==================================================
+완료: 모든 테스트가 통과했습니다.
+결과 폴더: E:\Baemin\answer\problem2_inventory_api\reports\runs\20261006-192715-133
+**********************
+Windows PowerShell transcript end
+End time: 20261006192719
+**********************
